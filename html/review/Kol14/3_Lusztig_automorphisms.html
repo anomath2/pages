@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+3. Lusztig automorphisms</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+3.1. Quantum groups</h3>
+<div class="para">
+</div>
+<div class="para">
+The Hopf algebra structure of $U_q(\mathfrak{g})$ is given as follows.
+\begin{align*}  \begin{split}
+    &\Delta(E_i) = E_i \otimes 1 + K_i \otimes E_i, \quad \epsilon(E_i) = 0, \quad S(E_i) = -K_i^{-1} E_i, \\
+    &\Delta(F_i) = F_i \otimes K_i^{-1} + 1 \otimes F_i, \quad \epsilon(F_i) = 0, \quad S(F_i) = -F_i K_i, \\
+    &\Delta(K_h) = K_h \otimes K_h, \quad \epsilon(K_h) = 1, \quad S(K_h) = K_{-h}.
+  \end{split}
+\end{align*}</div>
+<div class="para">
+$x \in \tilde{H}$ acts on $U_q(\mathfrak{g})$ by
+\[  x u = x(\beta) u \text{ for all } u \in U_q(\mathfrak{g})_\beta,\ \beta \in Q.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 3.2</h3>
+<div class="para">
+</div>
+<div class="para">
+We have
+\[  \operatorname{Aut}_{\text{Hopf}}(U_q(\mathfrak{g}')) = \tilde{H} \rtimes \operatorname{Aut}(A).
+\]</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

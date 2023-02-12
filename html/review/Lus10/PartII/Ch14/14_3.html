@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+14.3. The Subsets $\mathcal{B}_{i;n}$ of $\mathcal{B}$</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+<span id="Lus10_14_3"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+14.3.1<span id="Lus10_14_3_1"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+For $i \in I$ and $n \in \mathbb{Z}_{\geq 0}$, set
+\[  \mathcal{B}_{i; \geq n} := \mathcal{B} \cap \theta_i^n \mathbf{f}, \quad {}^\sigma \mathcal{B}_{i; \geq n} := \mathcal{B} \cap \mathbf{f} \theta_i^n,
+\]\[  \mathcal{B}_{i;n} := \mathcal{B}_{i, \geq n} \setminus \mathcal{B}_{i, \geq n+1}, \quad {}^\sigma \mathcal{B}_{i;n} := {}^\sigma \mathcal{B}_{i, \geq n} \setminus {}^\sigma \mathcal{B}_{i, \geq n+1}.
+\]</div>
+<div class="para">
+We have
+\[  \mathcal{B}_{i; \geq n} = \bigsqcup_{n' \geq n} \mathcal{B}_{i;n'}, \quad {}^\sigma \mathcal{B}_{i; \geq n} = \bigsqcup_{n' \geq n} {}^\sigma \mathcal{B}_{i;n'}, 
+\]\[  {}^\sigma \mathcal{B}_{i; \geq n} = \sigma(\mathcal{B}_{i; \geq n}), \quad {}^\sigma \mathcal{B}_{i;n} = \sigma(\mathcal{B}_{i;n}).
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 14.3.2<span id="Lus10_14_3_2"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+<ul>
+  <li>
+ (a) $\mathcal{B}_{i; \geq n}$ is a signed basis of $\sum_{n' \geq n} \theta_i^{(n)} {}_{\mathcal{A}}\mathbf{f}$.
+  </li>
+<li>
+ (b) ${}^\sigma \mathcal{B}_{i; \geq n}$ is a signed basis of $\sum_{n' \geq n} {}_{\mathcal{A}}\mathbf{f} \theta_i^{(n)}$.
+  </li>
+<li>
+ (c) For each $b \in \mathcal{B}_{i;0}$, there exists a unique element $b' \in \mathcal{B}_{i;n}$ such that
+  \[
+    \theta_i^{(n)} b \in b' + \mathcal{A} \mathcal{B}_{i; \geq n+1}.
+  \]
+  Moreover, $b \mapsto b'$ is a bijection $\pi_{i,n} : \mathcal{B}_{i;0} \rightarrow \mathcal{B}_{i;n}$.
+  </li>
+<li>
+ (d) For each $b \in {}^\sigma \mathcal{B}_{i;0}$, there exists a unique element $b' \in {}^\sigma \mathcal{B}_{i;n}$ such that
+  \[
+    b \theta_i^{(n)} \in b' + \mathcal{A} {}^\sigma \mathcal{B}_{i; \geq n+1}.
+  \]
+  Moreover, $b \mapsto b'$ is a bijection ${}^\sigma \pi_{i,n} : {}^\sigma \mathcal{B}_{i;0} \rightarrow {}^\sigma \mathcal{B}_{i;n}$.
+</li>
+</ul>
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

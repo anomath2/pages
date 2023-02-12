@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+2.2. Root Datum</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+<span id="Lus10_2_2"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+2.2.1<span id="Lus10_2_2_1"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+A <em>root datum</em> of type $(I, \cdot)$ is a quintuple $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$ consisting of
+<ul>
+  <li>
+ two finitely generated free abelian groups $Y,X$,
+  </li>
+<li>
+ a perfect pairing $\langle ,  \rangle: Y \times X \rightarrow \mathbb{Z}$,
+  </li>
+<li>
+ two subsets $\Pi^\vee = \{ h_i \mid i \in I \} \subset Y$ and $\{ \alpha_i \mid i \in I \} \subset X$,
+</li>
+</ul>
+satisfying
+\[  \langle h_i, \alpha_j \rangle = a_{i,j} \text{ for all } i,j \in I.
+\]</div>
+<div class="para">
+Let
+\[  h: \mathbb{Z}[I] \rightarrow Y;\ \nu = \sum_{i \in I} \nu_i i \mapsto \sum_{i \in I} \nu_i h_i,
+\]\[  \alpha: \mathbb{Z}[I] \rightarrow X;\ \nu = \sum_{i \in I} \nu_i i \mapsto \sum_{i \in I} \nu_i \alpha_i.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+2.2.2<span id="Lus10_2_2_2"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+A rood datum $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$ is said to be
+<ul>
+  <li>
+ <em>$X$-regular</em> if $\Pi$ is linearly independent.
+  </li>
+<li>
+ <em>$Y$-regular</em> if $\Pi^\vee$ is linearly independent.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+2.2.3</h3>
+<div class="para">
+</div>
+<div class="para">
+If the root datum is $X$-regular, then there exists a partial order $\leq$ on $X$ defined as follows.
+For each $\lambda,\mu \in X$, we have $\lambda \leq \mu$ if and only if $\mu - \lambda \in \alpha(\mathbb{Z}_{\geq 0}[I])$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+2.2.6</h3>
+<div class="para">
+</div>
+<div class="para">
+The Weyl group $W$ acts on $Y$ and $X$ by
+\[  s_i(h) := h - \langle h, \alpha_i \rangle h_i, \quad s_i(\lambda) := \lambda - \langle h_i, \lambda \rangle \alpha_i \text{ for all } i \in I,\ h \in Y,\ \lambda \in X.
+\]</div>
+<div class="para">
+We have
+\[  \langle w(h), w(\lambda) \rangle = \langle h, \lambda \rangle
+\]for all $w \in W$, $h \in Y$, $\lambda \in X$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+2.2.7</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $s_{i_1} \cdots s_{i_r}$ be a reduced expression of an element of $W$.
+Then,
+\[  s_{i_r} \cdots s_{i_2}(h_{i_1}) \in h(\mathbb{Z}_{\geq 0}[I]), \quad s_{i_r} \cdots s_{i_2}(\alpha_{i_1}) \in \alpha(\mathbb{Z}_{\geq 0}[I]).
+\]</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

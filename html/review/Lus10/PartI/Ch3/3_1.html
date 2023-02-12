@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+3.1. The Algebras ${}^\prime \mathbf{U}$ and $\mathbf{U}$</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+<span id="Lus10_3_1"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+3.1.1<span id="Lus10_3_1_1"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+The algebra $\mathbf{U}$ is the unital associative $\mathbb{Q}(v)$-algebra with generators
+\[  \{ E_i, F_i, K_h \mid i \in I,\ h \in Y \}
+\]subject to the following relations:
+For each $h,h' \in Y$, $i,j \in I$, $f(\theta_i \mid i \in I) \in \mathcal{I}$.
+\begin{align*}  \begin{split}
+    &K_0 = 1, \\
+    &K_h K_{h'} = K_{h + h'}, \\
+    &K_h E_i = v^{\langle h, \alpha_i \rangle} E_i K_h, \\
+    &K_h F_i = v^{\langle h, -\alpha_i \rangle} F_i K_h, \\
+    &[E_i, F_j] = \delta_{i,j} \frac{K_i - K_i^{-1}}{v_i - v_i^{-1}}, \\
+    &f(E_i \mid i \in I) = f(F_i \mid i \in I) = 0.
+  \end{split}
+\end{align*}</div>
+<div class="para">
+There exists a unique algebra homomorphism
+\[  \cdot^\pm: \mathbf{f} \rightarrow \mathbf{U}
+\]such that
+\[  \theta_i^+ = E_i, \quad \theta_i^- = F_i \text{ for all } i \in I.
+\]Its image is denoted by $\mathbf{U}^\pm$.
+</div>
+<div class="para">
+For each $i \in I$ and $n \in \mathbb{Z}$, set
+\[  E_i^{(n)} := (\theta_i^{(n)})^+, \quad F_i^{(n)} := (\theta_i^{(n)})^-
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+3.1.2</h3>
+<div class="para">
+</div>
+<div class="para">
+A morphism of root data of the same type induces an algebra homomorphism.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+3.1.3<span id="Lus10_3_1_3"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+There exists a unique algebra automorphism $\omega$ on $\mathbf{U}$ such that
+\[  \omega(E_i) = F_i, \quad \omega(F_i) = E_i, \quad \omega(K_h) = K_{-h} \text{ for all } i \in I,\ h \in Y.
+\]</div>
+<div class="para">
+There exists a unique anti-algebra automorphism $\sigma$ on $\mathbf{U}$ such that
+\[  \sigma(E_i) = E_i, \quad \sigma(F_i) = F_i, \quad \sigma(K_h) = K_{-h} \text{ for all } i \in I,\ h \in Y.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Lemma 3.1.4<span id="Lus10_3_1_4"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+There exists a unique algebra homomorphism
+\[  \Delta : \mathbf{U} \rightarrow \mathbf{U} \otimes \mathbf{U},
+\]called the <em>comultiplication</em>, such that
+\begin{align*}  \begin{split}
+    &\Delta(E_i) = E_i \otimes 1 + K_i \otimes E_i, \\
+    &\Delta(F_i) = 1 \otimes F_i + F_i \otimes K_i^{-1}, \\
+    &\Delta(K_h) = K_h \otimes K_h
+  \end{split}
+\end{align*}for all $i \in I$, $h \in Y$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+3.1.11<span id="Lus10_3_1_11"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+There exists a unique algebra homomorphism
+\[  \epsilon: \mathbf{U} \rightarrow \mathbb{Q}(v),
+\]called the <em>counit</em>, such that
+\[  \epsilon(E_i) = \epsilon(F_i) = 0, \quad \epsilon(K_h) = 1
+\]for all $i \in I$, $h \in Y$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+3.1.12<span id="Lus10_3_1_12"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+There exists a unique $\mathbb{Q}$-algebra automorphism $\overline{\cdot}$ on $\mathbf{U}$ such that
+\[  \overline{E_i} = E_i, \quad \overline{F_i} = F_i, \quad \overline{K_h} = K_{-h}, \quad \overline{v} = v^{-1}
+\]for all $i \in I$, $h \in Y$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+3.1.13<span id="Lus10_3_1_13"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Set
+\[  {}_\mathcal{A} \mathbf{U}^\pm := ({}_{\mathcal{A}}\mathbf{f})^\pm.
+\]</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

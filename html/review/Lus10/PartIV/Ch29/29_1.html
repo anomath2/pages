@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+29.1. The Subsets $\dot{\mathbf{B}}[\lambda]$ of $\dot{\mathbf{B}}$</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+<span id="Lus10_29_1"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Assumption</h3>
+<div class="para">
+</div>
+<div class="para">
+In this chapter, the Cartan datum is of finite type.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+29.1.1</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\beta \in \dot{\mathbf{B}}$.
+Then, there exists a unique $\zeta \in X$ such that
+\[  \beta \in \dot{\mathbf{U}} 1_\zeta.
+\]Choose $\lambda,\lambda'' \in X^+$ such that $\lambda''-\lambda = \zeta$ and $\langle h_i, \lambda \rangle$ is large enough for all $i \in I$.
+Then, there exists a unique $\lambda_1 \in X^+$ such that
+\[  \beta \cdot (\xi_{-\lambda} \otimes \eta_{\lambda''}) \in B[\lambda_1],
+\]where $B$ denotes the canonical basis of ${}^\omega \Lambda_\lambda \otimes \Lambda_{\lambda''}$.
+This $\lambda_1$ does not depend on the choice of $\lambda,\lambda''$.
+</div>
+<div class="para">
+Let $\dot{\mathbf{B}}[\lambda_1]$ denote the subset of $\dot{\mathbf{B}}$ consisting of elements which gives rise to $\lambda_1$ as above.
+Then,
+\[  \dot{\mathbf{B}} = \bigsqcup_{\lambda_1 \in X^+} \dot{\mathbf{B}}[\lambda_1].
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+29.1.2</h3>
+<div class="para">
+</div>
+<div class="para">
+For each $\lambda_1 \in X^+$, let $\dot{\mathbf{U}}[\geq \lambda_1]$ (resp., $\dot{\mathbf{U}}[> \lambda_1]$) denote the subspace of $\dot{\mathbf{U}}$ spanned by $\bigsqcup_{\lambda_2 \geq \lambda_1} \dot{\mathbf{B}}[\lambda_2]$ (resp., $\bigsqcup_{\lambda_2 > \lambda_1} \dot{\mathbf{B}}[\lambda_2]$).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Lemma 29.1.3</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $u \in \dot{\mathbf{U}}$ and $\lambda_1 \in X^+$.
+Then, the following are equivalent.
+<ul>
+  <li>
+ (a) $u \in \dot{\mathbf{U}}[\geq \lambda_1]$.
+  </li>
+<li>
+ (b) For each $\lambda,\lambda'' \in X^+$, we have $u \cdot (\xi_{-\lambda} \otimes \eta_{\lambda''}) \in ({}^\omega \Lambda_\lambda \otimes \Lambda_{\lambda''})[\geq \lambda_1]$.
+  </li>
+<li>
+ (c) For each $M \in \mathcal{C}$ of finite dimension and $m \in M$, we have $um \in M[\geq \lambda_1]$.
+  </li>
+<li>
+ (d) If $\lambda_2 \in X^+$ and $u$ acts on $\Lambda_{\lambda_2}$ by a nonzero linear map, then $\lambda_2 \geq \lambda_1$.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+29.1.6</h3>
+<div class="para">
+</div>
+<div class="para">
+The $\dot{\mathbf{U}}$-module structure on $\Lambda_{\lambda_1}$ gives us a algebra homomorphism
+\[  \dot{\mathbf{U}} \rightarrow \operatorname{End}(\Lambda_{\lambda_1}).
+\]This restricts to
+\[  \dot{\mathbf{U}}[\geq \lambda_1] \rightarrow \operatorname{End}(\Lambda_{\lambda_1}),
+\]whose kernel is $\dot{\mathbf{U}}[> \lambda_1]$.
+Hence, we have an algebra homomorphism
+\[  \dot{\mathbf{U}}[\geq \lambda_1]/\dot{\mathbf{U}}[> \lambda_1] \rightarrow \operatorname{End}(\Lambda_{\lambda_1}),
+\]which is injective.
+In particular,
+\[  |\dot{\mathbf{B}}[\lambda_1]| = \dim \dot{\mathbf{U}}[\geq \lambda_1]/\dot{\mathbf{U}}[> \lambda_1] < \infty.
+\]</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

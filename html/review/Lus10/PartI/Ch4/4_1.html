@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+4.1. The Element $\Theta$</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+<span id="Lus10_4_1"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+4.1.1</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\widehat{\mathbf{U} \otimes \mathbf{U}}$ denote the completion of the vector space $\mathbf{U} \otimes \mathbf{U}$ with respect to the descending sequence of vector spaces
+\[  \mathcal{H}_N := (\mathbf{U}^+ \mathbf{U}^0 \sum_{\operatorname{tr} \nu \geq N} \mathbf{U}^-_\nu \otimes \mathbf{U} + \mathbf{U} \otimes \mathbf{U}^- \mathbf{U}^0 \sum_{\operatorname{tr} \nu \geq N} \mathbf{U}^+_\nu)
+\]for $N \in \mathbb{Z}_{> 0}$.
+</div>
+<div class="para">
+The $\mathbb{Q}(v)$-algebra structure on $\mathbf{U} \otimes \mathbf{U}$ extends by continuity to a $\mathbb{Q}(v)$-algebra structure on $\widehat{\mathbf{U} \otimes \mathbf{U}}$.
+</div>
+<div class="para">
+Let $\overline{\cdot}$ denote the $\mathbb{Q}$-algebra involution $\overline{\cdot}^{\otimes 2}$ on $\mathbf{U} \otimes \mathbf{U}$.
+It extends by continuity to a $\mathbb{Q}$-algebra involution $\overline{\cdot}$.
+</div>
+<div class="para">
+Set
+\[  \overline{\Delta} := \overline{\cdot} \circ \Delta \circ \overline{\cdot}: \mathbf{U} \rightarrow \mathbf{U} \otimes \mathbf{U}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 4.1.2</h3>
+<div class="para">
+</div>
+<div class="para">
+<ul>
+  <li>
+ (a) There exists a unique family of elements $\Theta_\nu \in \mathbf{U}^-_\nu \otimes \mathbf{U}^+_\nu$, $\nu \in \mathbb{Z}_{\geq 0}[I]$ such that
+  <ul>
+    <li>
+ $\Theta_0 = 1 \otimes 1$.
+    </li>
+<li>
+ $\Theta := \sum_{\nu \in \mathbb{Z}_{\geq 0}[I]} \Theta_\nu \in \widehat{\mathbf{U} \otimes \mathbf{U}}$ satisfies
+    \[
+      \Delta(u) \Theta = \Theta \overline{\Delta}(u) \text{ in $\widehat{\mathbf{U} \otimes \mathbf{U}}$} \text{ for all } u \in \mathbf{U}.
+    \]
+  </li>
+</ul>
+
+  </li>
+<li>
+ (b) Let $B$ be a linear basis of $\mathbf{f}$ such that $B_\nu := \mathbf{f}_\nu \cap B$ is a basis of $\mathbf{f}_\nu$ for all $\nu \in \mathbb{Z}_{\geq 0}[I]$.
+  Let $\{ b^* \mid b \in B_\nu \}$ denote the dual basis of $B_\nu$.
+  Then, we have
+  \[
+    \Theta_\nu = (-1)^{\operatorname{tr} \nu} v_\nu \sum_{b \in B_\nu} b^- \otimes (b^*)^+.
+  \]
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Corollary 4.1.3</h3>
+<div class="para">
+</div>
+<div class="para">
+We have
+\[  \Theta \overline{\Theta} = \overline{\Theta} \Theta = 1 \otimes 1 \text{ in } \widehat{\mathbf{U} \otimes \mathbf{U}}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+4.1.4<span id="Lus10_4_1_4"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+The element $\Theta$ is called the <em>quasi-$R$-matrix</em>.
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

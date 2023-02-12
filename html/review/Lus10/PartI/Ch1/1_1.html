@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+1.1. Cartan Data</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+<span id="Lus10_1_1"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.1.1<span id="Lus10_1_1_1"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+A <em>Cartan datum</em><span id="Lus10_cartan_datum"></span> is a pair $(I, \cdot)$ consisting of
+<ul>
+  <li>
+ a finite set $I$,
+  </li>
+<li>
+ a symmetric bilinear form $\cdot: \mathbb{Z}[I] \times \mathbb{Z}[I] \rightarrow \mathbb{Z}$,
+</li>
+</ul>
+satisfying the following for all $i,j \in I$.
+<ul>
+  <li>
+ $i \cdot i \in 2\mathbb{Z}_{> 0}$.
+  </li>
+<li>
+ $a_{i,j} := \frac{2 i \cdot j}{i \cdot i} \in \mathbb{Z}_{\leq 0}$ if $i \neq j$.
+</li>
+</ul>
+</div>
+<div class="para">
+Two Cartan data $(I, \cdot)$ and $(I, \circ)$ are said to be <em>proportional</em><span id="Lus10_cartan_datum_proportional"></span> if there exist $a,b \in \mathbb{Z}_{> 0}$ such that
+\[  a i \circ j = b i \cdot j \text{ for all } i,j \in I.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.1.2</h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $v$: an indeterminate.
+  </li>
+<li>
+ $v_i := v^{d_i}$, where $d_i := \frac{i \cdot i}{2}$ for all $i \in I$.
+  </li>
+<li>
+ For $P \in \mathbb{Q}(v)$, let $P_i$ denote the rational function obtained from $P$ by substituting $v$ by $v_i$.
+  </li>
+<li>
+ For $\nu = \sum_{i \in I} \nu_i i \in \mathbb{Z}[I]$, set
+  \[
+    v_\nu := \prod_{i \in I} v_i^{\nu_i}, \quad \operatorname{tr} \nu := \sum_{i \in I} \nu_i.
+  \]
+</li>
+</ul>
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

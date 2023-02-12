@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+Notation</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+<ul>
+  <li>
+ $A = (a_{i,j})_{i,j \in I}$: an indecomposable symmetrizable generalized Cartan matrix.
+  </li>
+<li>
+ $\mathbf{A} := \mathbb{K}[q]_{(q-1)}$ (10.1).
+  </li>
+<li>
+ $\operatorname{Aut}(A)$: the group of automorphisms on $A$.
+  </li>
+<li>
+ $\operatorname{Aut}(A, X)$: the group of automorphisms on $A$ leaving $X$ stable for a subset $X \subset I$.
+  </li>
+<li>
+ $\operatorname{Aut}(A, X)^\tau := \{ \sigma \in \operatorname{Aut}(A, X) \mid \sigma \tau = \tau \sigma \}$.
+  </li>
+<li>
+ $\operatorname{Aut}(\mathfrak{g})$: the group of Lie algebra automorphisms on $\mathfrak{g}$.
+  </li>
+<li>
+ $\operatorname{Aut}(\mathfrak{g},\mathfrak{g}')$: the group of automorphisms on $\mathfrak{g}$ which restrict to the identity on $\mathfrak{g}'$.
+  </li>
+<li>
+ $\mathfrak{b}^\pm := \mathfrak{n}^\pm \oplus \mathfrak{h}$: the Borel subalgebra of $\mathfrak{g}$.
+  </li>
+<li>
+ $B_J := B_{j_1} \cdots B_{j_n}$ for $J = (j_1,\dots,j_n) \in I^n$.
+  </li>
+<li>
+ $B_{\mathbf{c},\mathbf{s}}$: the algebra in <a href="" class="myref" name="Kol14_def_5_1">Definition 5.1</a>.
+  </li>
+<li>
+ $\mathcal{C} := \{ \mathbf{c} \in (\mathbb{K}(q)^\times)^{I \setminus X} \mid c_i = c_{\tau(i)} \text{ if } \tau(i) \neq i \text{ and } (\alpha_i, \Theta(\alpha_i)) = 0 \}$.
+  </li>
+<li>
+ $\overline{\mathcal{C}} := \{ \mathbf{c} \in (\overline{\mathbb{K}(q)}^\times)^{I \setminus X} \mid c_i = c_{\tau(i)} \text{ if } \tau(i) \neq i \text{ and } (\alpha_i, \Theta(\alpha_i)) = 0 \}$.
+  </li>
+<li>
+ $D = \operatorname{diag}(\epsilon_i)_{i \in I}$: a symmetrizing matrix for $A$ with $\epsilon_i$ coprime.
+  </li>
+<li>
+ $\overline{\mathcal{D}} := \{ \mathbf{d} \in (\overline{\mathbb{K}(q)}^\times)^{I \setminus X} \mid d_i = 1 \text{ if } \tau(i) = i \text{ or } (\alpha_i, \Theta(\alpha_i)) = 0 \text{ or } i \notin I^* \}$.
+  </li>
+<li>
+ $F_{i,j}(x,y) := \sum_{n=0}^{1-a_{i,j}} (-1)^n {1-a_{i,j} \brack n}_{q_i} x^{1-a_{i,j}-n} y x^n$.
+  </li>
+<li>
+ $F_J := F_{j_1} \cdots F_{j_n}$ for $J = (j_1,\dots,j_n) \in I^n$.
+  </li>
+<li>
+ $G$: the Kac-Moody group associated to $\mathfrak{g}'$.
+  </li>
+<li>
+ $\mathfrak{g}$: the Kac-Moody algebra of $A$ over $\mathbb{K}$.
+  </li>
+<li>
+ $\mathfrak{g}_\beta := \{ x \in \mathfrak{g} \mid [h,x] = \beta(h)x \text{ for all } h \in \mathfrak{h} \}$: the root space for $\beta \in \mathfrak{h}^*$.
+  </li>
+<li>
+ $\mathfrak{g}' := [\mathfrak{g},\mathfrak{g}]$: the derived algebra.
+  </li>
+<li>
+ $\hat{\mathfrak{g}}$: the untwisted affine Lie algebra for finite dimensional $\mathfrak{g}$.
+  </li>
+<li>
+ $\mathfrak{h} := \mathbb{K} \otimes_{\mathbb{Z}} P^\vee$.
+  </li>
+<li>
+ $\mathfrak{h}' := \mathfrak{g}' \cap \mathfrak{h}$.
+  </li>
+<li>
+ $\tilde{H} := \operatorname{Hom}_{\text{grp}}(Q, \mathbb{K}^\times)$.
+  </li>
+<li>
+ $\tilde{H} := \operatorname{Hom}_{\text{grp}}(Q, \mathbb{K}(q)^\times)$.
+  </li>
+<li>
+ $I$: finite set.
+  </li>
+<li>
+ $I_{\mathrm{ns}} := \{ i \in I \setminus X \mid \tau(i) = i \text{ and } \alpha_i(h_j) = 0 \text{ for all } j \in X \}$.
+  </li>
+<li>
+ $I^* \subset I \setminus X$: a subset containing exactly one element of each $\tau$-orbit in $I \setminus X$.
+  </li>
+<li>
+ $\mathbb{K}$: an algebraically closed field of characteristic $0$.
+  </li>
+<li>
+ $\overline{\mathbb{K}(q)}$: the algebraic closure.
+  </li>
+<li>
+ $\mathfrak{k} := \{ x \in \mathfrak{g} \mid \theta(x) = x \}$.
+  </li>
+<li>
+ $\mathfrak{k}' := \{ x \in \mathfrak{g}' \mid \theta(x) = x \}$.
+  </li>
+<li>
+ $K_i := K_{\epsilon_i h_i}$ for $i \in I$.
+  </li>
+<li>
+ $(K_i;0)_q := \frac{K_i-1}{q-1}$.
+  </li>
+<li>
+ $K_\beta := \prod_{i \in I} K_i^{n_i}$ for $\beta = \sum_{i \in I} n_i \alpha_i \in Q$.
+  </li>
+<li>
+ $L(\mathfrak{g}) := \mathfrak{g} \otimes \mathbb{K}[t,t^{-1}]$: the loop algebra for finite dimensional $\mathfrak{g}$.
+  </li>
+<li>
+ $\lambda_{i,j} := (1-a_{i,j}) \alpha_i + \alpha_j$ (Remark 5.12).
+  </li>
+<li>
+ $m_i := \exp(e_i) \exp(-f_i) \exp(e_i) \in G$ for $i \in I$.
+  </li>
+<li>
+ $m_{i,j}$: the order of $r_ir_j \in W$ for $i \neq j \in I$.
+  </li>
+<li>
+ $\mathcal{M}_X$: the subalgebra of $U_q(\mathfrak{g})$ generated by $E_j,F_j,K_j^{\pm 1}$, $j \in X$.
+  </li>
+<li>
+ $\mathcal{M}_X^+ := U^+ \cap \mathcal{M}_X$.
+  </li>
+<li>
+ $\mathfrak{n}^\pm$: the subalgebra of $\mathfrak{g}$ generated by $e_i/f_i$, $i \in I$.
+  </li>
+<li>
+ $\omega \in \operatorname{Aut}(\mathfrak{g})$: the Chevalley involution;
+  \[
+    \omega(e_i) = -f_i,\ \omega(f_i) = -e_i,\ \omega(h) = -h.
+  \]
+  </li>
+<li>
+ $\omega$: the Chevalley involution on $U_q(\mathfrak{g})$;
+  \[
+    \omega(E_i) = -F_i,\ \omega(F_i) = -E_i,\ \omega(K_h) = K_{-h}.
+  \]
+  </li>
+<li>
+ $\operatorname{Out} := \begin{cases}
+    \operatorname{Aut}(A) & \text{ if } \text{$A$ is of finite type}, \\
+    \operatorname{Aut}(A) \cup \omega \operatorname{Aut}(A) & \text{ otherwise}.
+  \end{cases}$
+  </li>
+<li>
+ $P := \{ h \in \mathfrak{h}^* \mid \lambda(P^\vee) \subset \mathbb{Z} \}$.
+  </li>
+<li>
+ $P^\vee$: a free abelian group of rank $2|I|-\operatorname{rank}A$ with basis $\{ h_i \mid i \in I \} \sqcup \{ d_s \mid s = 1,\dots,\operatorname{corank}A \}$.
+  </li>
+<li>
+ $\Phi := \{ \beta \in \mathfrak{h}^* \setminus \{0\} \mid \mathfrak{g}_\beta \neq 0 \}$.
+  </li>
+<li>
+ $\Phi^+ := \Phi \cap Q^+$.
+  </li>
+<li>
+ $\Pi := \{ \alpha_i \mid i \in I \} \subset \mathfrak{h}^*$: a linearly independent subset such that
+  \[
+    \alpha_j(h_i) = a_{i,j}, \quad \alpha_j(d_s) \in \{ 0,1 \}.
+  \]
+  </li>
+<li>
+ $\Pi^\vee := \{ h_i \mid i \in I \}$.
+  </li>
+<li>
+ $\psi$: the algebra automorphism on $U_q(\mathfrak{g})$ in <a href="" class="myref" name="Kol14_4_1">4.1</a>.
+  </li>
+<li>
+ $q$: an indeterminate.
+  </li>
+<li>
+ $q_i := q^{\epsilon_i}$ for $i \in I$.
+  </li>
+<li>
+ $Q := \mathbb{Z} \Pi$.
+  </li>
+<li>
+ $Q^+ := \mathbb{Z}_{\geq 0} \Pi$.
+  </li>
+<li>
+ $Q^\Theta := \{ \beta \in Q \mid \Theta(\beta) = \beta \}$.
+  </li>
+<li>
+ $Q^\vee := \mathbb{Z} \Pi^\vee$.
+  </li>
+<li>
+ $\mathcal{S} := \{ \mathbf{s} \in \mathbb{K}(q)^{I \setminus X} \mid s_i \neq 0 \text{ implies } i \in I_{\mathrm{ns}} \text{ and } a_{i,j} \in -2\mathbb{Z}_{\geq 0} \text{ for all } j \in I_\mathrm{ns} \setminus \{i\} \}$.
+  </li>
+<li>
+ $\overline{\mathcal{S}} := \{ \mathbf{s} \in \overline{\mathbb{K}(q)}^{I \setminus X} \mid s_i \neq 0 \text{ implies } i \in I_{\mathrm{ns}} \text{ and } a_{i,j} \in -2\mathbb{Z}_{\geq 0} \text{ for all } j \in I_\mathrm{ns} \setminus \{i\} \}$.
+  </li>
+<li>
+ $s(X,\tau) \in \tilde{H}$: the element in <a href="" class="myref" name="Kol14_eq_2_7">(2.7)</a>.
+  </li>
+<li>
+ $T_i := T''_{i,1}$ for $i \in I$.
+  </li>
+<li>
+ $T_X$: the algebra automorphism on $U_q(\mathfrak{g})$ in <a href="" class="myref" name="Kol14_4_2">4.2</a>.
+  </li>
+<li>
+ $\theta(X,\tau) \in \operatorname{Aut}(\mathfrak{g})$: the element in <a href="" class="myref" name="Kol14_thm_2_5">Theorem 2.5</a>.
+  </li>
+<li>
+ $\theta_q(X, \tau)$: the algebra automorphism on $U_q(\mathfrak{g}')$ in <a href="" class="myref" name="Kol14_def_4_3">Definition 4.3</a>.
+  </li>
+<li>
+ $\Theta: \mathfrak{h}^* \rightarrow \mathfrak{h}^*$: the linear map in <a href="" class="myref" name="Kol14_eq_2_10">(2.10)</a>.
+  </li>
+<li>
+ $U_q(\mathfrak{g})$: the quantized enveloping algebra of $\mathfrak{g}$.
+  </li>
+<li>
+ $U_q(\mathfrak{g})_\beta := \{ u \in U_q(\mathfrak{g}) \mid K_i u K_i^{-1} = q^{(\alpha_i, \beta) u \text{ for all } i \in I }\}$ for $\beta \in Q$.
+  </li>
+<li>
+ $\mathcal{U}'_\mathbf{A}$: the $\mathbf{A}$-subalgebra of $U_q(\mathfrak{g}')$ generated by $E_i,F_i,K_i^{\pm 1}, (K_i;0)_q$ (10.1).
+  </li>
+<li>
+ $\mathcal{U}'_1 := \mathbb{K} \otimes_\mathbf{A} \mathcal{U}'_\mathbf{A}$ (10.1).
+  </li>
+<li>
+ $U^\pm$: the subalgebra of $U_q(\mathfrak{g})$ generated by $E_i/F_i$, $i \in I$.
+  </li>
+<li>
+ $U^0$: the subalgebra of $U_q(\mathfrak{g})$ generated by $K_h$, $h \in P^\vee$.
+  </li>
+<li>
+ $U^{0 \prime}$: the subalgebra of $U_q(\mathfrak{g})$ generated by $K_i^{\pm 1}$, $i \in I$.
+  </li>
+<li>
+ $U^{0 \prime}_\Theta$: the subalgebra of $U_q(\mathfrak{g})$ generated by $K_\beta$, $\beta \in Q^\Theta$.
+  </li>
+<li>
+ $W = \langle r_i \mid i \in I \rangle$: the Weyl group.
+  </li>
+<li>
+ $W_X$: the parabolic subgroup of $W$ generated by $\{ r_j \mid j \in J \}$ for $X \subset I$.
+  </li>
+<li>
+ $w_X$: the longest element of $W_X$ for $X \subset I$ of finite type.
+  </li>
+<li>
+ $\operatorname{wt}(J) := \sum_{i=1}^n \alpha_{j_i}$ for $J = (j_1,\dots,j_n) \in I^n$.
+  </li>
+<li>
+ $(,)$: a nondegenerate symmetric bilinear form on $\mathfrak{h}$ and $\mathfrak{h}^*$ such that
+  \[
+    (h_i,h) = \frac{\alpha_i(h)}{\epsilon_i}, \quad (d_m, d_n) = 0.
+  \]
+  </li>
+<li>
+ $\nu \leq \mu$: the partial order on $Q$ defined by $\mu-\nu \in Q^+$.
+  </li>
+<li>
+ $|J| := n$ for $J = (j_1,\dots,j_n) \in I^n$.
+  </li>
+<li>
+ $\overline{x}$: the image of $x \in \mathcal{U}'_\mathbf{A}$ in $\mathcal{U}'_1$.
+</li>
+</ul>
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

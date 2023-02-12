@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+14.4. The Canonical Basis $\mathbf{B}$ of $\mathbf{f}$</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+<span id="Lus10_14_4"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+14.4.2<span id="Lus10_14_4_2"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+For each $\nu \in \mathbb{Z}_{\geq 0}[I]$, defined $\mathbf{B}_\nu \subset \mathcal{B}_\nu$ by induction on $\operatorname{tr} \nu$ as follows.
+If $\nu = 0$, then set
+\[  \mathbf{B}_0 := \{ 1 \}.
+\]If $\operatorname{tr} \nu > 0$, then set
+\[  \mathbf{B}_\nu := \bigcup_{\substack{i \in I \\ 0 < n \leq \nu_i}} \pi_{i,n}(\mathbf{B}_{\nu - ni} \cap \mathcal{B}_{i;0}).
+\]</div>
+<div class="para">
+Set
+\[  \mathbf{B} := \bigsqcup_{\nu \in \mathbb{Z}_{\geq 0}[I]} \mathbf{B}_\nu.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 14.4.3</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\nu \in \mathbb{Z}_{\geq 0}[I]$.
+<ul>
+  <li>
+ (a) $\mathbf{B}_\nu \cap (-\mathbf{B}_\nu) = \emptyset$.
+  </li>
+<li>
+ (b) $\mathbf{B}_\nu \cap (-\sigma(\mathbf{B}_\nu)) = \emptyset$.
+  </li>
+<li>
+ (c) $\sigma(\mathbf{B}_\nu) = \mathbf{B}_\nu$.
+  </li>
+<li>
+ (d) $\mathbf{B}$ is a basis of ${}_{\mathcal{A}}\mathbf{f}$.
+  </li>
+<li>
+ (e) $\mathbf{B}_\nu$ is a basis of ${}_{\mathcal{A}}\mathbf{f}_\nu$.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+14.4.6<span id="Lus10_14_4_6"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+The set $\mathbf{B}$ is called the <em>canonical basis</em> of $\mathbf{f}$.
+</div>
+<div class="para">
+Set
+\[  \mathbf{B}_{i;n} := \mathcal{B}_{i;n} \cap \mathbf{B}, \quad {}^\sigma \mathbf{B}_{i;n} := \sigma(\mathbf{B}_{i;n}).
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 14.4.11<span id="Lus10_14_4_11"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Assume that the root datum is $Y$-regular.
+Let $\lambda \in X^+$.
+Set
+\[  \mathbf{B}(\lambda) := \bigcap_{i \in I} \left( \bigcup_{n=0}^{\langle h_i, \lambda \rangle} {}^\sigma \mathbf{B}_{i;n} \right).
+\]<ul>
+  <li>
+ (a) The map $b \mapsto b^- \eta_\lambda$ defines a bijection of $\mathbf{B}(\lambda)$ onto a basis $\mathbf{B}(\Lambda_\lambda)$ of $\Lambda_\lambda$.
+  </li>
+<li>
+ (b) If $b \in \mathbf{B} \setminus \mathbf{B}(\lambda)$, then $b^- \eta_\lambda = 0$.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+14.4.12<span id="Lus10_14_4_12"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+The set $\mathbf{B}(\Lambda_\lambda)$ is called the <em>canonical basis</em> of $\Lambda_\lambda$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 14.4.13</h3>
+<div class="para">
+</div>
+<div class="para">
+Assume that the Cartan datum is <a href="" class="myref" name="Lus10_2_1_3">symmetric</a>.
+<ul>
+  <li>
+ (a) For each $b,b' \in \mathbf{B}$, we have
+  \[
+    b b' = \sum_{b'' \in \mathbf{B},\ n \in \mathbb{Z}} c_{b,b',b'',n} v^n b'',
+  \]
+  where $c_{b,b',b'',n} \in \mathbb{Z}_{\geq 0}$ are zero except for finitely many $b''$, $n$.
+  </li>
+<li>
+ (b) For each $b \in \mathbf{B}$, we have
+  \[
+    r(b) = \sum_{b',b'' \in \mathbf{B},\ n \in \mathbb{Z}} d_{b,b',b'',n} v^n b' \otimes b'',
+  \]
+  where $d_{b,b',b'',n} \in \mathbb{Z}_{\geq 0}$ are zero except for finitely many $b$, $b''$, $n$.
+  </li>
+<li>
+ (c) For each $b,b' \in \mathbf{B}$, we have
+  \[
+    (b, b') = \sum_{n \in \mathbb{Z}_{\geq 0}} f_{b,b',n} v^{-n},
+  \]
+  where $f_{b,b',n} \in \mathbb{Z}_{\geq 0}$.
+</li>
+</ul>
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
