@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <title>
-Dictionary{dict}</title>
+Examples of Coalgebras{coalg_ex}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="..\home.html">
+<base href="..\..\home.html">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
 </script>
 <script type="text/x-mathjax-config" defer>
@@ -37,49 +37,35 @@ displayIndent: '2em'
 <article class="art">
 <div class="flexContainer__spaceBetween">
 <h2 class="art_ttl">
-Dictionary<span id="dict"></span></h2>
+Examples of Coalgebras<span id="coalg_ex"></span></h2>
 </div>
 <section class="sect">
 <h3 class="sect_ttl">
-</h3>
+Coordinate Coalgebra of $M_n(\mathbb{K})$</h3>
 <div class="para">
 </div>
 <div class="para">
+Let
 <ul>
   <li>
- <a href="" class="myref" name="alg">Algebra</a>
+ $\mathbb{K}$: a field.
   </li>
 <li>
- <a href="" class="myref" name="bialg">Bialgebra</a>
+ $n \in \mathbb{Z}_{> 0}$.
   </li>
 <li>
- <a href="" class="myref" name="cartan_datum">Cartan Datum</a>
-  </li>
-<li>
- <a href="" class="myref" name="coalg">Coalgebra</a>
-  </li>
-<li>
- <a href="" class="myref" name="gcm">Generalized Cartan Matrix</a>
-  </li>
-<li>
- <a href="" class="myref" name="hopf_alg">Hopf Algebra</a>
-  </li>
-<li>
- <a href="" class="myref" name="lus_alg">Lusztig Algebra</a>
-  </li>
-<li>
- <a href="" class="myref" name="qua_grp">Quantum Group</a>
-  </li>
-<li>
- <a href="" class="myref" name="root_datum">Root Datum</a>
-  </li>
-<li>
- <a href="" class="myref" name="terminology">Terminology</a>
+ $M_n(\mathbb{K})$: the algebra of $(n \times n)$-matrices.
 </li>
 </ul>
-</div>
-<div class="para">
-</div>
+For each $1 \leq i,j \leq n$, let $u_j^i$ denote the linear form on $M_n(\mathbb{K})$ defined by
+\[  u_j^i(X) = x_{i,j} \text{ for all } X = (x_{i,j})_{1 \leq i,j \leq n} \in M_n(\mathbb{K}).
+\]Set
+\[  \mathbb{K}[M_n(\mathbb{K})] := \operatorname{Span}_\mathbb{K} \{ u_j^i \mid 1\ leq i,j \leq n \}.
+\]Then, it is a coalgebra with comultiplication
+\[  \Delta(u_j^i) := \sum_{k=1}^n u_k^i \otimes u_j^k
+\]and counit
+\[  \epsilon(u_j^i) = \delta_{i,j}.
+\]</div>
 </section>
 </article>
 </main>

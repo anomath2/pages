@@ -282,5 +282,20 @@
   "rep_qua_grp_defs": "..\\dictionary\\qua_grp\\rep\\def.html#rep_qua_grp_defs",
   "KlS97": "..\\review\\KlS97\\index.html#KlS97",
   "KlS97_notation": "..\\review\\KlS97\\preface.html#KlS97_notation",
-  "KlS97_terminology": "..\\review\\KlS97\\terminology.html#KlS97_terminology"
+  "KlS97_terminology": "..\\review\\KlS97\\terminology.html#KlS97_terminology",
+  "hom_alg": "..\\dictionary\\alg\\def.html#hom_alg",
+  "op_alg": "..\\dictionary\\alg\\def.html#op_alg",
+  "coalg_defs": "..\\dictionary\\coalg\\def.html#coalg_defs",
+  "bialg_def": "..\\dictionary\\bialg\\def.html#bialg_def",
+  "bialg": "..\\dictionary\\bialg\\index.html#bialg",
+  "coalg_def": "..\\dictionary\\coalg\\def.html#coalg_def",
+  "comul_coalg": "..\\dictionary\\coalg\\def.html#comul_coalg",
+  "counit_coalg": "..\\dictionary\\coalg\\def.html#counit_coalg",
+  "hom_coalg": "..\\dictionary\\coalg\\def.html#hom_coalg",
+  "op_coalg": "..\\dictionary\\coalg\\def.html#op_coalg",
+  "conv_prod_coalg": "..\\dictionary\\coalg\\def.html#conv_prod_coalg",
+  "coalg_ex": "..\\dictionary\\coalg\\ex.html#coalg_ex",
+  "coalg": "..\\dictionary\\coalg\\index.html#coalg",
+  "coalg_prop": "..\\dictionary\\coalg\\prop.html#coalg_prop",
+  "alg_str_conv_prod": "..\\dictionary\\coalg\\prop.html#alg_str_conv_prod"
 }

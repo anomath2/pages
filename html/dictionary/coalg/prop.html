@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <title>
-Dictionary{dict}</title>
+Properties of Coalgebras{coalg_prop}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="..\home.html">
+<base href="..\..\home.html">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
 </script>
 <script type="text/x-mathjax-config" defer>
@@ -37,48 +37,35 @@ displayIndent: '2em'
 <article class="art">
 <div class="flexContainer__spaceBetween">
 <h2 class="art_ttl">
-Dictionary<span id="dict"></span></h2>
+Properties of Coalgebras<span id="coalg_prop"></span></h2>
 </div>
 <section class="sect">
 <h3 class="sect_ttl">
-</h3>
+Convolution Product<span id="alg_str_conv_prod"></span></h3>
 <div class="para">
 </div>
 <div class="para">
+Let
 <ul>
   <li>
- <a href="" class="myref" name="alg">Algebra</a>
+ $\mathbb{K}$: a field.
   </li>
 <li>
- <a href="" class="myref" name="bialg">Bialgebra</a>
+ $A$: a unital associative $\mathbb{K}$-algebra.
   </li>
 <li>
- <a href="" class="myref" name="cartan_datum">Cartan Datum</a>
-  </li>
-<li>
- <a href="" class="myref" name="coalg">Coalgebra</a>
-  </li>
-<li>
- <a href="" class="myref" name="gcm">Generalized Cartan Matrix</a>
-  </li>
-<li>
- <a href="" class="myref" name="hopf_alg">Hopf Algebra</a>
-  </li>
-<li>
- <a href="" class="myref" name="lus_alg">Lusztig Algebra</a>
-  </li>
-<li>
- <a href="" class="myref" name="qua_grp">Quantum Group</a>
-  </li>
-<li>
- <a href="" class="myref" name="root_datum">Root Datum</a>
-  </li>
-<li>
- <a href="" class="myref" name="terminology">Terminology</a>
+ $C$: a $\mathbb{K}$-coalgebra.
 </li>
 </ul>
+Then, the vector space $\operatorname{Hom}_{\mathbb{K}}(C, A)$ becomes a unital associative algebra with multiplication being the convolution product and unit element $\epsilon \circ \eta$.
 </div>
 <div class="para">
+In particular (when $A = \mathbb{K}$), the dual vector space $C^*$ of the coalgebra $C$ is an algebra with multiplication
+\[  (f * g)(a) = ((f \otimes g) \circ \Delta)(a) = \sum f(a_{(1)}) g(a_{(2)})
+\]and unit element $\epsilon$.
+</div>
+<div class="para">
+Note that the dual vector space of the algebra $A$ does not become a coalgebra in general since $(A \otimes A)^*$ is larger than $A^* \otimes A^*$ in general.
 </div>
 </section>
 </article>

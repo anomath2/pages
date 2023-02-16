@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Definitions Concerning Coalgebras{coalg_defs}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+Definitions Concerning Coalgebras<span id="coalg_defs"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Bialgebras<span id="bialg_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+</li>
+</ul>
+A <em>bialgebra over $\mathbb{K}$</em> or a <em>$\mathbb{K}$-bialgebra</em> is a vector space $B$ over $\mathbb{K}$ which is an algebra and a coalgebra such that the multiplication and unit are coalgebra homomorphisms, or equivalently, the comultiplication and counit are algebra homomorphisms.
+</div>
+<div class="para">
+Namely, if we denote by $\tau$ the flip operator, then the following diagrams commute.
+</div>
+<div class="para">
+<script type="text/tikz">
+\begin{tikzpicture}  \node (o) at (-2,1) {};
+  \node (AAA) at (0,0) {$B \otimes B$};
+  \node (AAne) at (4,0) {$B$};
+  \node (AAsw) at (0,-1.5) {$(B \otimes B) \otimes (B \otimes B)$};
+  \node (A) at (4,-1.5) {$B \otimes B$};
+  \node (v00) at (6,0) {$B$};
+  \node (v01) at (10,0) {$B \otimes B$};
+  \node (v11) at (8,-1.5) {$K$};
+  \draw[->] (node cs:name=AAA) to node[auto=left] {$m$} (node cs:name=AAne);
+  \draw[->] (node cs:name=AAA) to node[auto=left] {$\Delta \otimes \Delta$} (node cs:name=AAsw);
+  \draw[->] (node cs:name=AAsw) to node[auto=right] {$m_{B \otimes B}$} (node cs:name=A);
+  \draw[->] (node cs:name=AAne) to node[auto=left] {$\Delta$} (node cs:name=A);
+  \draw[->] (node cs:name=v00) to node[auto=left] {$\Delta$} (node cs:name=v01);
+  \draw[->] (node cs:name=v11) to node[auto=left] {$\eta$} (node cs:name=v00);
+  \draw[->] (node cs:name=v11) to node[auto=right] {$\eta \otimes \eta$} (node cs:name=v01);
+  \node (00) at (0,-3) {$B \otimes B$};
+  \node (01) at (4,-3) {$B$};
+  \node (10) at (0,-4.5) {$K \otimes K$};
+  \node (11) at (4,-4.5) {$K$};
+  \node (02) at (6,-3) {$B$};
+  \node (03) at (10,-3) {$K$};
+  \node (12) at (8,-4.5) {$K$};
+  \draw[->] (node cs:name=00) to node[auto=left] {$m$} (node cs:name=01);
+  \draw[->] (node cs:name=00) to node[auto=left] {$\epsilon \otimes \epsilon$} (node cs:name=10);
+  \draw[->] (node cs:name=01) to node[auto=left] {$\epsilon$} (node cs:name=11);
+  \draw[->] (node cs:name=10) to node[auto=left] {$\simeq$} (node cs:name=11);
+  \draw[->] (node cs:name=02) to node[auto=left] {$\epsilon$} (node cs:name=03);
+  \draw[->] (node cs:name=12) to node[auto=left] {$\eta$} (node cs:name=02);
+  \draw[->] (node cs:name=12) to node[auto=right, sloped] {$\simeq$} (node cs:name=03);
+\end{tikzpicture}</script>
+</div>
+<div class="para">
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

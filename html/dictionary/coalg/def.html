@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Definitions Concerning Coalgebras{coalg_defs}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+Definitions Concerning Coalgebras<span id="coalg_defs"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Coalgebras<span id="coalg_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+</li>
+</ul>
+A <em>coalgebra over $\mathbb{K}$</em> or a <em>$\mathbb{K}$-coalgebra</em> is a vector space $C$ over $\mathbb{K}$ equipped with a linear map
+\[  \Delta: A \rightarrow A \otimes A,
+\]called the <em>comultiplication</em><span id="comul_coalg"></span> and a linear map
+\[  \epsilon: A \rightarrow \mathbb{K},
+\]called the <em>counit</em><span id="counit_coalg"></span>, satisfying the coassociative law
+\[  (\Delta \otimes \mathrm{id}) \circ \Delta = (\mathrm{id} \otimes \Delta) \circ \Delta 
+\]and
+\[  (\epsilon \otimes \mathrm{id}) \circ \Delta = \mathrm{id} = \mathrm{id} = (\mathrm{id} \otimes \epsilon) \circ \Delta.
+\]</div>
+<div class="para">
+Namely, the following diagrams commute.
+</div>
+<div class="para">
+<script type="text/tikz">
+\begin{tikzpicture}  \node (o) at (-2,1) {};
+  \node (AAA) at (0,0) {$C \otimes C \otimes C$};
+  \node (AAne) at (4,0) {$C \otimes C$};
+  \node (AAsw) at (0,-1.5) {$C \otimes C$};
+  \node (A) at (4,-1.5) {$C$};
+  \draw[<-] (node cs:name=AAA) to node[auto=left] {$\Delta \otimes \mathrm{id}$} (node cs:name=AAne);
+  \draw[<-] (node cs:name=AAA) to node[auto=left] {$\mathrm{id} \otimes \Delta$} (node cs:name=AAsw);
+  \draw[<-] (node cs:name=AAne) to node[auto=left] {$\Delta$} (node cs:name=A);
+  \draw[<-] (node cs:name=AAsw) to node[auto=left] {$\Delta$} (node cs:name=A);
+  \node (KA) at (0,-3) {$K \otimes C$};
+  \node (AAm) at (4,-3) {$C \otimes C$};
+  \node (AK) at (8,-3) {$C \otimes C$};
+  \node (As) at (4,-4.5) {$C$};
+  \draw[<-] (node cs:name=KA) to node[auto=left] {$\epsilon \otimes \mathrm{id}$} (node cs:name=AAm);
+  \draw[<-] (node cs:name=AK) to node[auto=right] {$\mathrm{id} \otimes \epsilon$} (node cs:name=AAm);
+  \draw[<-] (node cs:name=AAm) to node[auto=left] {$\Delta$} (node cs:name=As);
+  \draw[<-] (node cs:name=KA) to node[auto=left, sloped] {$\simeq$} (node cs:name=As);
+  \draw[<-] (node cs:name=AK) to node[auto=left, sloped] {$\simeq$} (node cs:name=As);
+\end{tikzpicture}</script>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Homomorphisms on Coalgebras<span id="hom_coalg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+  </li>
+<li>
+ $C, D$: two coalgebras over $\mathbb{K}$.
+  </li>
+<li>
+ $f: C \rightarrow D$: a linear map.
+</li>
+</ul>
+The linear map $f$ is said to be a <em>coalgebra homomorphism</em> if
+\[  \Delta_D \circ f = (f \otimes f) \circ \Delta_A \text{ and } \epsilon_A = \epsilon_B \circ f.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Opposite Coalgebra<span id="op_coalg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+  </li>
+<li>
+ $C,$: an algebras over $\mathbb{K}$.
+</li>
+</ul>
+The <em>opposite coalgebra</em> is the algebra $C^\mathrm{op}$ whose underlying vector space is the same as $C$, and the comultiplication is given by
+\[  \Delta^\mathrm{op} := \tau \circ \Delta,
+\]where $\tau$ denotes the flip operator.
+\[  \tau: A \otimes A \rightarrow A \otimes A;\ a \otimes b \mapsto b \otimes a.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Convolution Product<span id="conv_prod_coalg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+  </li>
+<li>
+ $A$: a $\mathbb{K}$-algebra.
+  </li>
+<li>
+ $C$: a $\mathbb{K}$-coalgebra.
+</li>
+</ul>
+The <em>convolution product</em> on $\operatorname{Hom}_{\mathbb{K}}(C, A)$ is the linear map
+\[  * : \operatorname{Hom}_{\mathbb{K}}(C, A) \otimes \operatorname{Hom}_{\mathbb{K}}(C, A) \rightarrow \operatorname{Hom}_{\mathbb{K}}(C, A)
+\]defined by
+\[  (f*g)(a) := (m \circ (f \otimes g) \circ \Delta)(a) = \sum f(a_{(1)}) g(a_{(2)})
+\]for all $f,g \in \operatorname{Hom}_{\mathbb{K}}(C, A)$, $a \in A$.
+</div>
+<div class="para">
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
