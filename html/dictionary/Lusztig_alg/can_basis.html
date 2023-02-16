@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Canonical Bases of Lusztig Algebras{can_basis_lus_alg}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+Canonical Bases of Lusztig Algebras<span id="can_basis_lus_alg"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of the Canonical Signed Basis<span id="can_sign_basis_lus_alg_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathcal{A} := \mathbb{Z}[q,q^{-1}]$.
+  </li>
+<li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $\mathbf{f}$: the Lusztig algebra.
+  </li>
+<li>
+ $\overline{\cdot}$: the bar-involution on $\mathbf{f}$.
+  </li>
+<li>
+ ${}_\mathcal{A} \mathbf{f}$: the integral form of $\mathbf{f}$.
+</li>
+</ul>
+The <em>canonical signed basis</em> of $\mathbf{f}$ is the subset $\mathbf{B}^{\mathrm{sgn}}$ given by
+\[  \mathbf{B}^{\mathrm{sgn}} := \{ x \in {}_\mathcal{A}\mathbf{f} \mid \overline{x} = x,\ (x,x) \in 1 + q^{-1} \mathbb{Z}[\![q^{-1}]\!] \}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Properties of the Signed Canonical Basis</h3>
+<div class="para">
+</div>
+<div class="para">
+<ul>
+  <li>
+ $\mathbf{B}^{\mathrm{sgn}}$ is a signed basis of ${}_\mathcal{A}\mathbf{f}$ (<a href="Lus10" class="cite">[Lus10, Theorem 14.2.3 (a)]</a>).
+  </li>
+<li>
+ If $b \neq \pm b' \in \mathbf{B}^{\mathrm{sgn}}$, then $(b, b') \in q^{-1} \mathbb{Z}[\![q^{-1}]\!]$ (<a href="Lus10" class="cite">[Lus10, Theorem 14.2.3 (b)]</a>).
+  </li>
+<li>
+ $\mathbf{B}^{\mathrm{sgn}}_\nu := \mathbf{f}_\nu \cap \mathbf{B}^{\mathrm{sgn}}$ is a signed basis of $\mathbf{f}_\nu$ for all $\nu \in \mathbb{Z}_{\geq 0}[I]$.
+  </li>
+<li>
+ $\theta_i^{(n)} \in \mathbf{B}^{\mathrm{sgn}}$ for all $i \in I$, $n \in \mathbb{Z}_{\geq 0}$ (<a href="Lus10" class="cite">[Lus10, Section 14.2.5]</a>).
+  </li>
+<li>
+ $\sigma(\mathbf{B}^{\mathrm{sgn}}) = \mathbf{B}^{\mathrm{sgn}}$, where $\sigma$ denotes an <a href="" class="myref" name="sigma_lus_alg_def">anti-algebra involution</a> (<a href="Lus10" class="cite">[Lus10, Section 14.2.5]</a>).
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of the Kashiwara Operators<span id="kas_op_lus_alg_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathcal{A} := \mathbb{Z}[q,q^{-1}]$.
+  </li>
+<li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $\mathbf{f}$: the Lusztig algebra.
+  </li>
+<li>
+ $\mathbf{B}^{\mathrm{sgn}}$: the canonical signed basis.
+  </li>
+<li>
+ $i \in I$.
+  </li>
+<li>
+ $n \in \mathbb{Z}_{\geq 0}$.
+  </li>
+<li>
+ $\mathbf{B}^{\mathrm{sgn}}_{i; \geq n} := \theta_i^n \mathbf{f} \cap \mathbf{B}^{\mathrm{sgn}}$.
+  </li>
+<li>
+ $\mathbf{B}^{\mathrm{sgn}}_{i; n} := \mathbf{B}^{\mathrm{sgn}}_{i; \geq n} \setminus \mathbf{B}^{\mathrm{sgn}}_{i; \geq n+1}$.
+</li>
+</ul>
+There exists a bijection
+\[  \pi_{i; n} : \mathbf{B}^{\mathrm{sgn}}_{i; 0} \rightarrow \mathbf{B}^{\mathrm{sgn}}_{i; n}
+\]sending $b \in \mathbf{B}^{\mathrm{sgn}}_{i; 0}$ to a unique $b' \in \mathbf{B}^{\mathrm{sgn}}_{i;n}$ such that
+\[  \theta_i^{(n)} b \in b' + \mathcal{A} \mathbf{B}^{\mathrm{sgn}}_{i; \geq n+1}
+\](<a href="Lus10" class="cite">[Lus10, Section 14.3]</a>).
+</div>
+<div class="para">
+We call the bijections $\pi_{i;n}$ for $i \in I$ and $n \in \mathbb{Z}_{\geq 0}$ the <em>Kashiwara operators</em> on $\mathbf{f}$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of the Canonical Basis<span id="can_basis_lus_alg_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathcal{A} := \mathbb{Z}[q,q^{-1}]$.
+  </li>
+<li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $\mathbf{f}$: the Lusztig algebra.
+  </li>
+<li>
+ $\mathbf{B}^{\mathrm{sgn}}$: the canonical signed basis of $\mathbf{f}$.
+  </li>
+<li>
+ $\mathbf{B}^{\mathrm{sgn}}_{i; \geq n} := \theta_i^n \mathbf{f} \cap \mathbf{B}^{\mathrm{sgn}}$.
+  </li>
+<li>
+ $\mathbf{B}^{\mathrm{sgn}}_{i; n} := \mathbf{B}^{\mathrm{sgn}}_{i; \geq n} \setminus \mathbf{B}^{\mathrm{sgn}}_{i; \geq n+1}$.
+  </li>
+<li>
+ $\pi_{i;n}: \mathbf{B}^{\mathrm{sgn}}_{i; 0} \rightarrow \mathbf{B}^{\mathrm{sgn}}_{i; n}$: the Kashiwara operator on $\mathbf{f}$.
+</li>
+</ul>
+The <em>canonical basis</em> of $\mathbf{f}$ is the subset $\mathbf{B}$ defined by
+\[  \mathbf{B} := \bigsqcup_{\nu \in \mathbb{Z}_{\geq 0}[I]} \mathbf{B}_\nu, \quad \mathbf{B}_\nu := \bigcup_{\substack{i \in I \\ 0 < n \leq \nu_i}} \pi_{i; n}(\mathbf{B}^{\mathrm{sgn}}_{i; 0} \cap \mathbf{B}_{\nu - n \cdot i}) \quad (\nu = \sum_{i \in I} \nu_i \cdot i).
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Properties of the Canonical Basis</h3>
+<div class="para">
+</div>
+<div class="para">
+<ul>
+  <li>
+ $\mathbf{B}^{\mathrm{sgn}} = \mathbf{B} \sqcup (- \mathbf{B})$ (<a href="Lus10" class="cite">[Lus10, Section 14.4.2]</a>).
+  </li>
+<li>
+ $\mathbf{B}$ is a basis of ${}_{\mathcal{A}(\mathbb{Z})}\mathbf{f}$ (<a href="Lus10" class="cite">[Lus10, Theorem 14.4.3 (d)]</a>).
+  </li>
+<li>
+ $\mathbf{B}_\nu$ is a basis of ${}_{\mathcal{A}(\mathbb{Z})}\mathbf{f}_\nu$ for all $\nu \in \mathbb{Z}_{\geq 0}[I]$ (<a href="Lus10" class="cite">[Lus10, Theorem 14.4.3 (e)]</a>).
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+References</h3>
+<ul class="para twoColList">
+  <li>
+<div class="twoColList_1st" id="Lus10">
+<a href="bibliography\items\Lus10.html">[Lus10]</a></div>
+<div class="twoColList_2nd">
+ G. Lusztig, Introduction to Quantum Groups, Reprint of the 1994 edition, Modern Birkh&auml;user Classics, Birkh&auml;user/Springer, New York, 2010, xiv+346 pp.
+</div>
+</li>
+</ul>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

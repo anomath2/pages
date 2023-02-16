@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Definitions Concerning Lusztig Algebras{lus_alg_defs}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+Definitions Concerning Lusztig Algebras<span id="lus_alg_defs"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+Abstract</h3>
+<div class="para">
+</div>
+<div class="para">
+The Lusztig algebra is a $\mathbb{Q}(q)$-algebra associated with a Cartan datum.
+It is constructed by nondegenerating the pre-Lusztig algebra associated with the same Cartan datum.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Pre-Lusztig Algebras<span id="pre_lus_alg_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $d_i := \frac{i \cdot i}{2}$ for all $i \in I$.
+  </li>
+<li>
+ $q$: an indeterminate.
+  </li>
+<li>
+ $q_i := q^{d_i}$ for all $i \in I$.
+</li>
+</ul>
+The <em>pre-Lusztig algebra</em> is the unital free associative $\mathbb{Q}(q)$-algebra ${}^{\prime} \mathbf{f}$ with generators
+\[  \{ \theta_i \mid i \in I \},
+\]equipped with a symmetric bilinear form $(,)$, called the <em>standard form</em>, defined as follows.
+</div>
+<div class="para">
+For each $\nu \in \mathbb{Z}_{\geq 0}[I]$, set
+\[  {}^{\prime} \mathbf{f}_\nu := \operatorname{Span}_{\mathbb{Q}(q)} \left\{ \theta_{i_1} \cdots \theta_{i_r} \mid i_1,\dots,i_r \in I,\ \sum_{k=1}^r i_k = \nu \right\}.
+\]Then, we have
+\[  {}^{\prime} \mathbf{f} = \bigoplus_{\nu \in \mathbb{Z}_{\geq 0}[I]} {}^{\prime} \mathbf{f}_\nu \quad \text{ as vector spaces.}
+\]This makes ${}^{\prime} \mathbf{f}$ into a $\mathbb{Z}_{\geq 0}[I]$-graded algebra.
+For each $x \in {}^{\prime} \mathbf{f}_\nu$, let $|x|$ denote $\nu$.
+</div>
+<div class="para">
+The tensor square ${}^{\prime} \mathbf{f}^{\otimes 2}$ admits a $\mathbb{Q}(q)$-algebra structure
+\[  (x_1 \otimes x_2) \cdot (y_1 \otimes y_2) := q^{|x_2| \cdot |y_1|} x_1y_1 \otimes x_2y_2
+\]for homogeneous elements $x_1,x_2,y_1,y_2 \in {}^{\prime} \mathbf{f}$.
+</div>
+<div class="para">
+Similarly, the tensor cube ${}^{\prime} \mathbf{f}^{\otimes 3}$ admits a $\mathbb{Q}(q)$-algebra structure:
+\[  (x_1 \otimes x_2 \otimes x_3) \cdot (y_1 \otimes y_2 \otimes y_3) := q^{|x_3| \cdot (|y_1| + |y_2|) + |x_2| \cdot |y_1|} x_1y_1 \otimes x_2y_2 \otimes x_3y_3
+\]for homogeneous elements $x_1,x_2,x_3,y_1,y_2,y_3 \in {}^{\prime} \mathbf{f}$.
+</div>
+<div class="para">
+Since ${}^{\prime} \mathbf{f}$ is a free algebra, there exists a unique algebra homomorphism
+\[  r: {}^{\prime} \mathbf{f} \rightarrow {}^{\prime} \mathbf{f}^{\otimes 2}
+\]such that
+\[  r(\theta_i) = \theta_i \otimes 1 + 1 \otimes \theta_i.
+\]It is called the <em>comultiplication map on</em> ${}^{\prime} \mathbf{f}$.
+</div>
+<div class="para">
+Now, the standard form<span id="pre_lus_alg_std_form"></span> on ${}^{\prime} \mathbf{f}$ is defined to be the unique symmetric bilinear form satisfying the following.
+<ul>
+  <li>
+ $(1,1) = 1$.
+  </li>
+<li>
+ $(\theta_i, \theta_j) = \delta_{i,j} \frac{1}{1-q_i^{-2}}$ for all $i,j \in I$.
+  </li>
+<li>
+ $(x, y_1y_2) = (r(x), y_1 \otimes y_2)$ for all $x,y_1,y_2 \in {}^{\prime} \mathbf{f}$, where
+  \[
+    (x_1 \otimes x_2, y_1 \otimes y_2) := (x_1,y_1) \cdot (x_2,y_2) \text{ for all } x_1,x_2,y_1,y_2 \in {}^{\prime} \mathbf{f}.
+  \]
+</li>
+</ul>
+The existence of such a form follows from <a href="Lus10" class="cite">[Lus10, Proposition 1.2.3]</a>.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Lusztig Algebras<span id="lus_alg_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ ${}^{\prime} \mathbf{f}$: the pre-Lusztig algebra.
+  </li>
+<li>
+ $\mathcal{I}$: the radical of the standard form on ${}^{\prime} \mathbf{f}$.
+</li>
+</ul>
+The <em>Lusztig algebra</em> is the quotient algebra $\mathbf{f} := {}^{\prime} \mathbf{f}/\mathcal{I}$ (<a href="Lus10" class="cite">[Lus10, Section 1.2.5]</a>).
+The images of generators $\theta_i$ for $i \in I$ of ${}^{\prime} \mathbf{f}$ are still denoted by $\theta_i$.
+</div>
+<div class="para">
+The bilinear form on $\mathbf{f}$ induced from the standard form on ${}^{\prime} \mathbf{f}$ is called the <em>standard form on $\mathbf{f}$</em><span id="std_form_lus_alg"></span>.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Divided Powers<span id="div_pow_lus_alg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $d_i := \frac{i \cdot i}{2}$ for each $i \in I$.
+  </li>
+<li>
+ $q$: an indeterminate.
+  </li>
+<li>
+ $q_i := q^{\frac{i \cdot i}{2}}$ for eahc $i \in I$.
+  </li>
+<li>
+ $\mathbf{f}$: the Lusztig algebra.
+  </li>
+<li>
+ $[n]_i!$: the quantum factorial for $n \in \mathbb{Z}_{\geq 0}$ in variable $q_i$ for each $i \in I$.
+</li>
+</ul>
+The vectors of the form
+\[  \theta_i^{(n)} := \frac{\theta_i^n}{[n]_{q_i}!}
+\]with $i \in I$ and $n \in \mathbb{Z}_{\geq 0}$ are called the <em>divided powers</em>.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Integral Form of Lusztig Algebras<span id="int_form_lus_alg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathcal{A} := \mathbb{Z}[q,q^{-1}]$.
+  </li>
+<li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $q$: an indeterminate.
+  </li>
+<li>
+ $\theta_i^{(n)}$: the divided power for $i \in I$ and $n \in \mathbb{Z}_{\geq 0}$.
+</li>
+</ul>
+The <em>integral form</em> of $\mathbf{f}$ is the $\mathcal{A}$-subalgebra ${}_\mathcal{A}\mathbf{f}$ generated by the divided powers
+\[  \{ \theta_i^{(n)} \mid i \in I,\ n \in \mathbb{Z}_{\geq 0} \}
+\](<a href="Lus10" class="cite">[Lus10, Section 1.4.7]</a>).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Properties</h3>
+<div class="para">
+</div>
+<div class="para">
+<ul>
+  <li>
+ $\mathbf{f}$ is generated by $\theta_i$ for $i \in I$.
+  A set of defining relations with respect to these generators is known (see <a href="" class="myref" name="presen_lus_alg">here</a>).
+  </li>
+<li>
+ $\mathbf{f}$ is $\mathbb{Z}_{\geq 0}[I]$-graded<span id="gr_alg_str_lus_alg"></span> i.e.,
+  \[
+    \mathbf{f} = \bigoplus_{\nu \in \mathbb{Z}_{\geq 0}[I]} \mathbf{f}_\nu,
+  \]
+  where
+  \[
+    \mathbf{f}_\nu := \operatorname{Span}_{\mathbb{Q}(q)} \left\{ \theta_{i_1} \cdots \theta_{i_r} \mid i_1,\dots,i_r \in I,\ \sum_{k=1}^r i_k = \nu \right\}.
+  \]
+  For $x \in \mathbf{f}_\nu$, the $|x|$ denotes $\nu$.
+  </li>
+<li>
+ $\mathbf{f}$ is $\mathbb{Z}_{\geq 0}$-graded<span id="N_gr_alg_str_lus_alg"></span> i,e.,
+  \[
+    \mathbf{f} = \bigoplus_{n \geq 0} \mathbf{f}_n, \quad \mathbf{f}_n := \sum_{\substack{\nu \in \mathbb{Z}_{\geq 0}[I] \\ \operatorname{tr} \nu = n}} \mathbf{f}_\nu,
+  \]
+  where $\operatorname{tr} \sum_{i \in I} \nu_i i := \sum_{i \in I} \nu_i$.
+  </li>
+<li>
+ The standard form on $\mathbf{f}$ is nondegenerate.
+  </li>
+<li>
+ The tensor square $\mathbf{f}^{\otimes 2}$ and the tensor cube $\mathbf{f}^{\otimes 3}$ admit associative algebra structure induced from <a href="" class="myref" name="alg_str_tensor_square_pre_lus_alg">that</a> of ${}^{\prime} \mathbf{f}^{\otimes 2}$ and ${}^{\prime} \mathbf{f}^{\otimes 3}$, respectively.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Memo</h3>
+<div class="para">
+</div>
+<div class="para">
+<ul>
+  <li>
+ The Lusztig algebra $\mathbf{f}$ can be constructed geometrically, which leads to a canonical basis via the theory of perverse sheaves.
+  </li>
+<li>
+ The Lusztig algebra $\mathbf{f}$ is isomorphic to the negative/positive part of the quantized enveloping algebra.
+  </li>
+<li>
+ The base field can be changed to an arbitrary ring (with a unit element) via the integral form.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+References</h3>
+<ul class="para twoColList">
+  <li>
+<div class="twoColList_1st" id="Lus10">
+<a href="bibliography\items\Lus10.html">[Lus10]</a></div>
+<div class="twoColList_2nd">
+ G. Lusztig, Introduction to Quantum Groups, Reprint of the 1994 edition, Modern Birkh&auml;user Classics, Birkh&auml;user/Springer, New York, 2010, xiv+346 pp.
+</div>
+</li>
+</ul>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
