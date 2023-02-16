@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Homomorphisms on Quantum Groups{qua_grp_homs}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+Homomorphisms on Quantum Groups<span id="qua_grp_homs"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of the Anti-Algebra Involution $\sigma$<span id="sigma_qua_grp_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+</li>
+</ul>
+Then, there exists an anti-algebra involution $\sigma$ on $\mathbf{U}$ such that
+\[  \sigma(E_i) = E_i, \quad \sigma(F_i) = F_i, \quad \omega(K_h) = K_{-h},\ \text{ for all } i \in I \text{ and } h \in Y
+\](<a href="Lus10" class="cite">[Lus10, Section 3.1.3]</a>).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of the Bar-Involution<span id="bar_involution_qua_grp_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+</li>
+</ul>
+The <em>bar-involution</em> on $\mathbf{U}$ is the $\mathbb{Q}$-algebra automorphism $\overline{\cdot}$ such that
+\[  \overline{E_i} = E_i, \quad \overline{F_i} = F_i, \quad \overline{K_h} = K_{-h}, \quad \overline{q} = q^{-1}, \ \text{ for all } i \in I \text{ and } h \in Y
+\](<a href="Lus10" class="cite">[Lus10, Section 3.1.3]</a>).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of the Chevalley Involution<span id="chevalley_involution_qua_grp_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+</li>
+</ul>
+The <em>Chevalley involution</em> on $\mathbf{U}$ is the algebra automorphism $\omega$ such that
+\[  \omega(E_i) = F_i, \quad \omega(F_i) = E_i, \quad \omega(K_h) = K_{-h},\ \text{ for all } i \in I \text{ and } h \in Y
+\](<a href="Lus10" class="cite">[Lus10, Section 3.1.3]</a>).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of the Anti-Algebra Involution $\rho$<span id="rho_qua_grp_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+</li>
+</ul>
+Then, there exists an anti-algebra involution $\rho$ on $\mathbf{U}$ such that
+\[  \rho(E_i) = q_i K_i F_i, \quad \rho(F_i) = q_i K_i^{-1} E_i, \quad \rho(K_h) = K_h,\ \text{ for all } i \in I \text{ and } h \in Y
+\](<a href="Lus10" class="cite">[Lus10, Section 19.1.1]</a>).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Lusztig's Symmetries $T^?_{i,e}$<span id="lus_symm_qua_grp"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $a_{i,j} := \frac{2 i \cdot j}{i \cdot i}$.
+  </li>
+<li>
+ $d_i := \frac{i \cdot i}{2}$.
+  </li>
+<li>
+ $q_i := q^{d_i}$.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+  </li>
+<li>
+ $i \in I$.
+  </li>
+<li>
+ $e \in \{ 1, -1 \}$.
+  </li>
+<li>
+ $? \in \{ \prime, \prime\prime \}$.
+</li>
+</ul>
+There exists a unique algebra automorphism $T^?_{i,e}$ on $\mathbf{U}$ satisfying the following:
+\begin{align*}  \begin{split}
+    &T'_{i,\pm}(E_j) = \begin{cases}
+      -K_i^{\pm 1} F_i & \text{ if } j = i, \\
+      \sum_{r+s = -a_{i,j}} (-1)^r q_i^{\pm r} E_i^{(r)} E_j E_i^{(s)} & \text{ if } j \neq i,
+    \end{cases} \\
+    &T'_{i,\pm}(F_j) = \begin{cases}
+      -E_i K_i^{\mp 1} & \text{ if } j = i, \\
+      \sum_{r+s = -a_{i,j}} (-1)^r q_i^{\mp r} F_i^{(s)} F_j F_i^{(r)} & \text{ if } j \neq i,
+    \end{cases} \\
+    &T'_{i,\pm}(K_h) = K_{s_i(h)}, \\
+    &T''_{i,\pm}(E_j) = \begin{cases}
+      -F_i K_i^{\pm 1} & \text{ if } j = i, \\
+      \sum_{r+s = -a_{i,j}} (-1)^r q_i^{\mp r} E_i^{(s)} E_j E_i^{(r)} & \text{ if } j \neq i,
+    \end{cases} \\
+    &T''_{i,\pm}(F_j) = \begin{cases}
+      -K_i^{\mp 1} E_i & \text{ if } j = i, \\
+      \sum_{r+s = -a_{i,j}} (-1)^r q_i^{\pm r} F_i^{(r)} F_j F_i^{(s)} & \text{ if } j \neq i,
+    \end{cases} \\
+    &T''_{i,\pm}(K_h) = K_{s_i(h)}.
+  \end{split}
+\end{align*}For the definition of $s_i(h)$, see <a href="" class="myref" name="weyl_grp_action_root_datum_def">here</a>.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+References</h3>
+<ul class="para twoColList">
+  <li>
+<div class="twoColList_1st" id="Lus10">
+<a href="bibliography\items\Lus10.html">[Lus10]</a></div>
+<div class="twoColList_2nd">
+ G. Lusztig, Introduction to Quantum Groups, Reprint of the 1994 edition, Modern Birkh&auml;user Classics, Birkh&auml;user/Springer, New York, 2010, xiv+346 pp.
+</div>
+</li>
+</ul>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Definitions Concerning Root Data{root_datum_defs}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+Definitions Concerning Root Data<span id="root_datum_defs"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Root Data<span id="root_datum_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $a_{i,j} := \frac{2 i \cdot j}{i \cdot i}$ for each $i,j \in I$.
+</li>
+</ul>
+A <em>root datum</em> over $I$ is a quintuple $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$ consisting of
+<ul>
+  <li>
+ a free abelian group $X$ of finite rank, called the <em>weight lattice</em><span id="wt_lattice_root_datum"></span>,
+  </li>
+<li>
+ a free abelian group $Y$ of finite rank, called the <em>coroot lattice</em><span id="coroot_lattice_root_datum"></span>,
+  </li>
+<li>
+ a perfect bilinear pairing $\langle ,  \rangle: Y \times X \rightarrow \mathbb{Z}$,
+  </li>
+<li>
+ a subset $\Pi = \{ \alpha_i \mid i \in I \} \subset X$, called the set of <em>simple roots</em><span id="simple_root_root_datum"></span>,
+  </li>
+<li>
+ a subset $\Pi^\vee = \{ h_i \mid i \in I \} \subset Y$, called the set of <em>simple coroots</em><span id="simple_coroot_root_datum"></span>,
+</li>
+</ul>
+such that
+\[  \langle h_i, \alpha_j \rangle = a_{i,j} \text{ for all } i,j \in I
+\](<a href="Lus10" class="cite">[Lus10, Section 2.2.1]</a>).
+</div>
+<div class="para">
+Let $h : \mathbb{Z}[I] \rightarrow Y$ and $\alpha: \mathbb{Z}[I] \rightarrow X$ denote the linear maps defined as follows:
+\[  h(\nu) = \sum_{i \in I} \nu_i h_i, \quad \alpha(\nu) = \sum_{i \in I} \nu_i \alpha_i \ \text{ for all } \nu = \sum_{i \in I} \nu_i i \in \mathbb{Z}[I].
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Weyl Group Action<span id="weyl_grp_action_root_datum_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $W$: the Weyl group of $I$.
+</li>
+</ul>
+Then, $W$ acts on $Y$ and $X$ by
+\[  s_i(h) = h - \langle h, \alpha_i \rangle h_i, \quad s_i(\lambda) = \lambda - \langle h_i, \lambda \rangle \alpha_i, \quad \text{ for all } i \in I,\ h \in Y,\ \lambda \in X
+\](<a href="Lus10" class="cite">[Lus10, Section 2.2.6]</a>).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Regular Root Data<span id="regular_root_datum_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+</li>
+</ul>
+The root datum $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$ is said to be
+<ul>
+  <li>
+ <em>$X$-regular</em> if $\Pi$ is linearly independent (<a href="Lus10" class="cite">[Lus10, Section 2.2.2]</a>).
+  </li>
+<li>
+ <em>$Y$-regular</em> if $\Pi^\vee$ is linearly independent (<a href="Lus10" class="cite">[Lus10, Section 2.2.2]</a>).
+  </li>
+<li>
+ <em>regular</em> if it is both $X$-regular and $Y$-regular.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Dominance Order<span id="dom_order_root_datum"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: an $X$-regular root datum over $I$.
+</li>
+</ul>
+Then, there exists a partial ordering $\leq$ on $X$, called the <em>dominance order</em>, defined as follows.
+Let $\lambda,\mu \in X$.
+Then, we have $\lambda \leq \mu$ if and only if $\mu - \lambda \in \sum_{i \in I} \mathbb{Z}_{\geq 0} \alpha_i$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Dominant Weights<span id="dom_wt_root_datum_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a $Y$-regular root datum over $I$.
+</li>
+</ul>
+A weight $\lambda \in X$ is said to be <em>dominant</em> if
+\[  \langle h_i, \lambda \rangle \geq 0 \text{ for all } i \in I
+\](<a href="Lus10" class="cite">[Lus10, Section 3.5.5]</a>).
+</div>
+<div class="para">
+The set of dominant weights is denoted by $X^+$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Properties</h3>
+<div class="para">
+</div>
+<div class="para">
+<ul>
+  <li>
+ $\alpha_i = \alpha_j$ if and only if $i = j$.
+  </li>
+<li>
+ $h_i = h_j$ if and only if $i = j$.
+  </li>
+<li>
+ Root data over a Cartan datum of finite type are regular.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+References</h3>
+<ul class="para twoColList">
+  <li>
+<div class="twoColList_1st" id="Lus10">
+<a href="bibliography\items\Lus10.html">[Lus10]</a></div>
+<div class="twoColList_2nd">
+ G. Lusztig, Introduction to Quantum Groups, Reprint of the 1994 edition, Modern Birkh&auml;user Classics, Birkh&auml;user/Springer, New York, 2010, xiv+346 pp.
+</div>
+</li>
+</ul>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

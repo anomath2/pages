@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Definitions Concerning Representations of Quantum Groups{rep_qua_grp_defs}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+Definitions Concerning Representations of Quantum Groups<span id="rep_qua_grp_defs"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Weight Modules<span id="wt_mod_qua_grp_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+</li>
+</ul>
+A $\mathbf{U}$-module $M$ is said to be a <em>weight module</em> if it admits a <em>weight space decomposition</em><span id="wt_sp_decomp_wt_mod_qua_grp"></span>
+\[  M = \bigoplus_{\lambda \in X} M_\lambda, \quad M_\lambda := \{ m \in M \mid K_h m = q^{\langle h, \lambda \rangle}m \text{ for all } h \in Y \}.
+\]The subspace $M_\lambda$ for $\lambda \in X$ is called the <em>weight space of weight $\lambda$</em><span id="wt_sp_wt_mod_qua_grp"></span>, and the vectors of $M_\lambda$ are called the <em>weight vectors of weight $\lambda$</em>.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Highest Weight Modules<span id="hwm_qua_grp_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+</li>
+</ul>
+A $\mathbf{U}$-module $M$ is said to be a <em>highest weight module</em> of highest weight $\lambda$ if there exists a nonzero vector $m \in M$, called a <em>highest weight vector</em><span id="hwv_hwm_qua_grp"></span>, satisfying the following.
+<ul>
+  <li>
+ $K_h m = q^{\langle h, \lambda \rangle} m$ for all $h \in Y$.
+  </li>
+<li>
+ $E_i m = 0$ for all $i \in I$.
+  </li>
+<li>
+ $\mathbf{U} m = M$.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Verma Modules<span id="verma_mod_qua_grp_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+</li>
+</ul>
+The <em>Verma module</em> of highest weight $\lambda$ is the $\mathbf{U}$-module $M(\lambda)$ satisfying the following universal property.
+Let $M$ be a highest weight $\mathbf{U}$-module of highest weight $\lambda$ with a highest weight vector $m$.
+Then, there exists a unique $\mathbf{U}$-module homomorphism $M(\lambda) \rightarrow M$ which sends $v_\lambda$ to $m$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of irreducible Highest Weight Modules<span id="irr_hwm_qua_grp_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+</li>
+</ul>
+The <em>irreducible highest weight module</em> is the unique simple quotient $V(\lambda)$ of the Verma module $M(\lambda)$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Integrable Modules<span id="int_mod_qua_grp_def"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $I$: a Cartan datum.
+  </li>
+<li>
+ $(Y, X, \langle , \rangle, \Pi^\vee, \Pi)$: a root datum over $I$.
+  </li>
+<li>
+ $\mathbf{U}$: the quantum group.
+</li>
+</ul>
+A weight $\mathbf{U}$-module $M$ is said to be <em>integrable</em> if for each $m \in M$ and $i \in I$, there exists $N \in \mathbb{Z}_{\geq 0}$ such that
+\[  E_i^N m = F_i^N m = 0
+\](<a href="Lus10" class="cite">[Lus10, Section 3.5.1]</a>).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+References</h3>
+<ul class="para twoColList">
+  <li>
+<div class="twoColList_1st" id="Lus10">
+<a href="bibliography\items\Lus10.html">[Lus10]</a></div>
+<div class="twoColList_2nd">
+ G. Lusztig, Introduction to Quantum Groups, Reprint of the 1994 edition, Modern Birkh&auml;user Classics, Birkh&auml;user/Springer, New York, 2010, xiv+346 pp.
+</div>
+</li>
+</ul>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
