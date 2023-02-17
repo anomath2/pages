@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Properties of Hopf Algebras{hopf_alg_prop}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+Properties of Hopf Algebras<span id="hopf_alg_prop"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+Antipode and Bialgebra Structure</h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+  </li>
+<li>
+ $H$: a Hopf algebra over $\mathbb{K}$.
+</li>
+</ul>
+Then, the antipode $S$ is an algebra anti-homomorphism on $H$, and is a coalgebra anti-homomorphism on $H$, i.e.,
+\[  S(ab) = S(b)S(a),\ S(1) = 1,\ \Delta^\mathrm{op} \circ S = (S \otimes S) \circ \Delta,\ \epsilon \circ S = \epsilon.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Invertibility of Antipode</h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+  </li>
+<li>
+ $H$: a Hopf algebra over $\mathbb{K}$.
+</li>
+</ul>
+Then, the following are equivalent.
+<ul>
+  <li>
+ The antipode is invertible.
+  </li>
+<li>
+ The bialgebra $H^\mathrm{op}$ is a Hopf algebra.
+  </li>
+<li>
+ The bialgebra $H^\mathrm{cop}$ is a Hopf algebra.
+</li>
+</ul>
+In this case, the inverse $S^{-1}$ is the antipode of $H^\mathrm{op}$ and $H^\mathrm{cop}$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Dual Hopf Algebra (Finite Dimension)</h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+  </li>
+<li>
+ $H$: a finite-dimensional Hopf algebra over $\mathbb{K}$.
+</li>
+</ul>
+Then, the dual vector space $H^*$ is equipped with the Hopf algebra structure as follows:
+\begin{align*}  \begin{split}
+    &(f \cdot g)(a) = \sum f(a_{(1)}) g(a_{(2)}), \\
+    &1_{H^*} = \epsilon, \\
+    &(\Delta(f))(a \otimes b) = f(ab), \\
+    &\epsilon_{H^*}(f) = f(1), \\
+    &(S_{H^*}(f))(a) = f(S(a)).
+  \end{split}
+\end{align*}</div>
+<div class="para">
+Consequently, the canonical pairing
+\[  \langle ,  \rangle: H^* \times H \rightarrow \mathbb{K}
+\]is a nondegenerate <a href="" class="myref" name="dual_pair_bialg">dual pairing</a> for the bialgebras $H^*$ and $H$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Dual Pairing</h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+  </li>
+<li>
+ $G, H$: two Hopf algebras over $\mathbb{K}$.
+  </li>
+<li>
+ $\langle ,  \rangle: G \times H \rightarrow \mathbb{K}$: a <a href="" class="myref" name="dual_pair_bialg">dual pairing</a> as bialgebras.
+</li>
+</ul>
+Then, we have
+\[  \langle S(g), h \rangle = \langle g, S(h) \rangle \ \text{ for all } (g,h) \in G \times H.
+\]</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

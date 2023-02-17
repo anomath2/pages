@@ -297,5 +297,17 @@
   "coalg_ex": "..\\dictionary\\coalg\\ex.html#coalg_ex",
   "coalg": "..\\dictionary\\coalg\\index.html#coalg",
   "coalg_prop": "..\\dictionary\\coalg\\prop.html#coalg_prop",
-  "alg_str_conv_prod": "..\\dictionary\\coalg\\prop.html#alg_str_conv_prod"
+  "alg_str_conv_prod": "..\\dictionary\\coalg\\prop.html#alg_str_conv_prod",
+  "bialg_defs": "..\\dictionary\\bialg\\def.html#bialg_defs",
+  "opp_bialg": "..\\dictionary\\bialg\\def.html#opp_bialg",
+  "grp_like_bialg": "..\\dictionary\\bialg\\def.html#grp_like_bialg",
+  "prim_bialg": "..\\dictionary\\bialg\\def.html#prim_bialg",
+  "bialg_prop": "..\\dictionary\\bialg\\prop.html#bialg_prop",
+  "def_hopf_alg": "..\\dictionary\\hopf_alg\\def.html#def_hopf_alg",
+  "antipode_hopf_alg": "..\\dictionary\\hopf_alg\\def.html#antipode_hopf_alg",
+  "hopf_alg_prop": "..\\dictionary\\hopf_alg\\prop.html#hopf_alg_prop",
+  "dual_pair_bialg": "..\\dictionary\\bialg\\def.html#dual_pair_bialg",
+  "hopf_alg_ex": "..\\dictionary\\hopf_alg\\ex.html#hopf_alg_ex",
+  "representative_fun_cpt_grp_hopf_alg_ex": "..\\dictionary\\hopf_alg\\ex.html#representative_fun_cpt_grp_hopf_alg_ex",
+  "coord_rng_mat_grp_hopf_alg_ex": "..\\dictionary\\hopf_alg\\ex.html#coord_rng_mat_grp_hopf_alg_ex"
 }

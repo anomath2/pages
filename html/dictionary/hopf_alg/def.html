@@ -50,6 +50,43 @@ Hopf algebras are associative algebras equipped with additional structures such 
 <div class="para">
 </div>
 </section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition of Hopf Algebras<span id="def_hopf_alg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+</li>
+</ul>
+A <em>Hopf algebra over $\mathbb{K}$</em> is a bialgebra $H$ equipped with a linear map
+\[  S : H \rightarrow H,
+\]called the <em>antipode</em><span id="antipode_hopf_alg"></span>, making the following diagram commute.
+</div>
+<div class="para">
+<script type="text/tikz">
+\begin{tikzpicture}  \node (o) at (-2,1) {};
+  \node (11) at (0,0) {$H \otimes H$};
+  \node (12) at (3,0) {$H$};
+  \node (13) at (6,0) {$H \otimes H$};
+  \node (21) at (0,-2) {$H \otimes H$};
+  \node (22) at (3,-2) {$H$};
+  \node (23) at (6,-2) {$H \otimes H$};
+  \draw[->] (node cs:name=12) to node[auto=right] {$\Delta$} (node cs:name=11);
+  \draw[->] (node cs:name=12) to node[auto=left] {$\Delta$} (node cs:name=13);
+  \draw[->] (node cs:name=21) to node[auto=left] {$m$} (node cs:name=22);
+  \draw[->] (node cs:name=23) to node[auto=right] {$m$} (node cs:name=22);
+  \draw[->] (node cs:name=11) to node[auto=right] {$1 \otimes S$} (node cs:name=21);
+  \draw[->] (node cs:name=12) to node[auto=left] {$\eta \circ \epsilon$} (node cs:name=22);
+  \draw[->] (node cs:name=13) to node[auto=left] {$S \otimes 1$} (node cs:name=23);
+\end{tikzpicture}</script>
+</div>
+<div class="para">
+</div>
+</section>
 </article>
 </main>
 <footer class="footer">

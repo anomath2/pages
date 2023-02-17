@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>
-Definitions Concerning Coalgebras{coalg_defs}</title>
+Definitions Concerning Bialgebras{bialg_defs}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="..\..\home.html">
@@ -37,7 +37,7 @@ displayIndent: '2em'
 <article class="art">
 <div class="flexContainer__spaceBetween">
 <h2 class="art_ttl">
-Definitions Concerning Coalgebras<span id="coalg_defs"></span></h2>
+Definitions Concerning Bialgebras<span id="bialg_defs"></span></h2>
 </div>
 <section class="sect">
 <h3 class="sect_ttl">
@@ -90,6 +90,97 @@ Namely, if we denote by $\tau$ the flip operator, then the following diagrams co
 \end{tikzpicture}</script>
 </div>
 <div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Opposite Bialgebra<span id="opp_bialg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $B$: a bialgebra.
+</li>
+</ul>
+Then, there are three kinds of <em>opposite bialgebras</em>;
+<ul>
+  <li>
+ $B^\mathrm{op}$ with $(m^\mathrm{op}, \Delta)$.
+  </li>
+<li>
+ $B^\mathrm{cop}$ with $(m, \Delta^\mathrm{op})$.
+  </li>
+<li>
+ $B^\mathrm{op, cop}$ with $(m^\mathrm{op}, \Delta^\mathrm{op})$.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Group-Like Elements<span id="grp_like_bialg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $B$: a bialgebra.
+</li>
+</ul>
+An element $b \in B$ is said to be <em>group-like</em> if
+\[  \Delta(b) = b \otimes b.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Primitive Elements<span id="prim_bialg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $B$: a bialgebra.
+</li>
+</ul>
+An element $b \in B$ is said to be <em>primitive</em> if
+\[  \Delta(b) = b \otimes 1 + 1 \otimes b.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Dual Pairing<span id="dual_pair_bialg"></span></h3>
+<div class="para">
+</div>
+<div class="para">
+Let
+<ul>
+  <li>
+ $\mathbb{K}$: a field.
+  </li>
+<li>
+ $B, C$: two bialgebras over $\mathbb{K}$.
+</li>
+</ul>
+A <em>dual pairing</em> is a bilinear map
+\[  \langle ,  \rangle: B \times C \rightarrow \mathbb{K}
+\]satisfying
+\begin{align*}  \begin{split}
+    &\langle \Delta(b), c_1 \otimes c_2  \rangle = \langle b, c_1c_2  \rangle, \\
+    &\langle b_1b_2, c \rangle = \langle b_1 \otimes b_2, \Delta(c) \rangle, \\
+    &\langle b, 1 \rangle = \epsilon(b), \\
+    &\langle 1, c \rangle = \epsilon(c)
+  \end{split}
+\end{align*}for all $b,b_1,b_2 \in B$ and $c,c_1,c_2 \in C$.
 </div>
 </section>
 </article>
