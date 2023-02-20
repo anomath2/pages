@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+[D05] 1.2. Exponentials{D05_1_2}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+[D05] 1.2. Exponentials<span id="D05_1_2"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+For $k \in \mathbb{Z}$, set
+\[  e_k(x) = e^{2 \pi i k x}.
+\]Then,
+\[  e_k \in C(\mathbb{R}/\mathbb{Z}).
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Lemma 1.2.1</h3>
+<div class="para">
+</div>
+<div class="para">
+If $k,l \in \mathbb{Z}$, then
+\[  \langle e_k, e_l \rangle = \delta_{k,l}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $f$ be periodic and Riemann integrable on the interval $[0,1]$.
+The numbers
+\[  c_k(f) := \langle f, e_k \rangle = \int_0^1 f(x) e^{-2 \pi i k x} dx, \ k \in \mathbb{Z},
+\]are called the <em>Fourier coefficients of $f$</em>.
+</div>
+<div class="para">
+The (formal) series
+\[  \sum_{k = -\infty}^\infty c_k(f) e_k(x)
+\]is called the <em>Fourier series of $f$</em>.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $R(\mathbb{R}/\mathbb{Z})$ denote the subspace of periodic functions that are Riemann integrable on $[0,1]$.
+Then,
+\[  C(\mathbb{R}/\mathbb{Z}) \subset R(\mathbb{R}/\mathbb{Z}).
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+For $f \in C(\mathbb{R}/\mathbb{Z})$, set
+\[  ||f||_2 := \sqrt{\langle f, f \rangle}.
+\]</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

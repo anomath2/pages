@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <title>
-Reviews</title>
+[D05] 1.4. Convergence in the $L^2$-Norm{D05_1_4}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="..\home.html">
+<base href="..\..\..\home.html">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
 </script>
 <script type="text/x-mathjax-config" defer>
@@ -37,31 +37,47 @@ displayIndent: '2em'
 <article class="art">
 <div class="flexContainer__spaceBetween">
 <h2 class="art_ttl">
-Reviews</h2>
+[D05] 1.4. Convergence in the $L^2$-Norm<span id="D05_1_4"></span></h2>
 </div>
 <section class="sect">
 <h3 class="sect_ttl">
-<span id="review"></span></h3>
+</h3>
 <div class="para">
 </div>
 <div class="para">
-<ul>
-  <li>
- <a href="" class="myref" name="D05">[D05] A First Course in Harmonic Analysis, Second Edition</a>
-  </li>
-<li>
- <a href="" class="myref" name="Kol14">[Kol14] Quantum symmetric Kac-Moody pairs</a>
-  </li>
-<li>
- <a href="" class="myref" name="KlS97">[KlS97] Quantum Groups and Their Representations</a>
-  </li>
-<li>
- <a href="" class="myref" name="Lus10">[Lus10] Introduction to Quantum Groups</a>
-</li>
-</ul>
+The notion of $L^2$-convergence is the appropriate notion of convergence for Fourier series.
+</div>
+<div class="para">
+Let $f, f_n \in R(\mathbb{R}/\mathbb{Z})$, $n \in \mathbb{Z}$.
+We say that the sequence $(f_n)$ <em>converges in the $L^2$-norm to $f$</em> if
+\[  \lim_{n \rightarrow \infty} ||f - f_n||_2 = 0.
+\]Note that if $(f_n)$ converges to $f$ in the $L^2$-norm, then it need not converge pointwise, and vice versa.
 </div>
 <div class="para">
 </div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Proposition 1.4.1</h3>
+<div class="para">
+</div>
+<div class="para">
+If the sequence $(f_n)$ converges to $f$ uniformly on $[0,1]$, then it converges to $f$ in the $L^2$-norm.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 1.4.4</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $f \in R(\mathbb{R}/\mathbb{Z})$.
+Then, the Fourier series of $f$ converges to $f$ in the $L^2$-norm.
+If $c_k$ denotes the Fourier coefficients of $f$, then
+\[  \sum_{k=-\infty}^\infty |c_k|^2 = \int_0^1 |f(x)|^2 dx.
+\]</div>
 </section>
 </article>
 </main>
