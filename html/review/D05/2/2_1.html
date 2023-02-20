@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+[D05] 2.1. Pre-Hilbert and Hilbert Spaces{D05_2_1}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+[D05] 2.1. Pre-Hilbert and Hilbert Spaces<span id="D05_2_1"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+A complex vector space $V$ together with an inner product $\langle ,  \rangle$ is called a <em>pre-Hilbert space</em><span id="D05_pre_hilb_sp"></span>.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Examples</h3>
+<div class="para">
+</div>
+<div class="para">
+For each $k \in \mathbb{Z}_{> 0}$, the vector space $\mathbb{C}^k$ with natural inner product
+\[  \langle v, w \rangle = v \cdot {}^t \overline{w}
+\]is a pre-Hilbert space.
+Every $k$-dimensional pre-Hilbert space is isomorphic to $\mathbb{C}^k$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+A linear map $T: V \rightarrow W$ of two pre-Hilbert spaces $V,W$ is called an <em>isometry</em><span id="D05_isometry"></span> if $T$ preserves inner products:
+\[  \langle T(u), T(v) \rangle = \langle u, v \rangle \ \text{ for all } u,v \in V.
+\]</div>
+<div class="para">
+Isometries are injective.
+</div>
+<div class="para">
+If an isometry is surjective, then it has an inverse, which is also an isometry.
+In this case, the isometry is called a <em>unitary map</em><span id="D05_unitary_map"></span> or an <em>isomorphism of pre-Hilbert spaces</em><span id="D05_isom_pre_hilb_sp"></span>.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be a pre-Hilbert space and $v \in V$.
+We say that a sequence $(v_n)$ in $V$ <em>converges to $v$</em> if
+\[  \lim_{n \rightarrow \infty} ||v_n - v|| = 0.
+\]In this case, we write
+\[  v = \lim_{n \rightarrow \infty} v_n.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+A subset $D \subset V$ is called a <em>dense subset</em> if for each $v \in V$, there exists a sequence $(d_n)$ in $D$ such that
+\[  v = \lim_{n \rightarrow \infty} d_n.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+A <em>Cauchy sequence in $V$</em><span id="D05_cauchy_seq_pre_hilb_sp"></span> is a sequence $(v_n)$ in $V$ such that for each $\epsilon > 0$, there exists $n_0 \in \mathbb{Z}_{\geq 0}$ such that for each $n,m \geq n_0$, we have
+\[  ||v_n - v_m|| < \epsilon.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+A <em>Hilbert space</em><span id="D05_hilb_sp"></span> is a pre-Hilbert space which is complete, i.e., every Cauchy sequence converges.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Proposition 2.1.4</h3>
+<div class="para">
+</div>
+<div class="para">
+A finite-dimensional pre-Hilbert space is a Hilbert space.
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

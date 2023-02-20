@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+[D05] 2.3. Orthonormal Bases and Completion{D05_2_3}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+[D05] 2.3. Orthonormal Bases and Completion<span id="D05_2_3"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+A <em>complete system</em> in a pre-Hilbert space $H$ is a family $(a_j)_{j \in J}$ of vectors in $H$ such that the linear subspace spanned by the vectors $a_j$ is dense in $H$.
+</div>
+<div class="para">
+A pre-Hilbert space is called <em>separable</em> if it contains a countable complete system.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Examples</h3>
+<div class="para">
+</div>
+<div class="para">
+For $j \in \mathbb{Z}_{\geq 0}$, define $\psi_j \in \ell^2(\mathbb{Z}_{\geq 0})$ by
+\[  \psi_j(k) = \delta_{j,k}\ \text{ for all } k \in \mathbb{Z}_{\geq 0}.
+\]Then, for each $f \in \ell^2(\mathbb{Z}_{\geq 0})$,
+\[  \langle f, \psi_j \rangle = f(j).
+\]This implies that the family $(\psi_j)_{j \in \mathbb{Z}_{\geq 0}}$ is a complete system.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+An <em>orthonormal system</em> in a pre-Hilbert space $H$ is a family $(h_j)_{j \in J}$ of vectors in $H$ such that
+\[  \langle h_j, h_k \rangle = \delta_{j,k} \ \text{ for all } j,k \in J.
+\]</div>
+<div class="para">
+An orthonormal system is called an <em>orthonormal basis</em> if it is also a complete system.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Example</h3>
+<div class="para">
+</div>
+<div class="para">
+The complete system $(\psi_j)_{j \in \mathbb{Z}_{\geq 0}}$ of $\ell^2(\mathbb{Z}_{\geq 0})$ is an orthonormal basis.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Proposition 2.3.1</h3>
+<div class="para">
+</div>
+<div class="para">
+Every separable pre-Hilbert space admits an orthonormal basis.
+(The assertion also holds for nonseparable Hilbert spaces.)
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 2.3.3</h3>
+<div class="para">
+</div>
+<div class="para">
+For every separable pre-Hilbert space $V$, there exists a Hilbert space $H$ such that there is an isometry
+\[  T: V \rightarrow H,
+\]called <em>completion</em>, that maps $V$ onto a dense subspace of $H$.
+The completion is unique up to isomorphism.
+(The assertion also holds for nonseparable Hilbert spaces.)
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
