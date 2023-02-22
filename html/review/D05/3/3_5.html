@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+3.5. Plancherel's Theorem{D05_3_5}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+3.5. Plancherel's Theorem<span id="D05_3_5"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Plancherel's theorem says that the Fourier transform preserves $L^2$-norms.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $L^2_\mathrm{bc}(\mathbb{R})$ denote the set of continuous, bounded functions $f: \mathbb{R} \rightarrow \mathbb{C}$ such that
+\[  ||f||_2^2 := \int_{-\infty}^\infty |f(x)|^2 dx < \infty.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Lemma 3.5.1</h3>
+<div class="para">
+</div>
+<div class="para">
+For $f,g \in L^2_\mathrm{bc}(\mathbb{R})$, the integral
+\[  \langle f, g \rangle := \int_{-\infty}^\infty f(x) \overline{g(x)} dx
+\]converges and defines an inner product on $L^2_\mathrm{bc}(\mathbb{R})$.
+The space $L^1_\mathrm{bc}(\mathbb{R})$ is a subspace of $L^2_\mathrm{bc}(\mathbb{R})$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $L^2(\mathbb{R})$ denote the completion of the pre-Hilbert space $L^1_\mathrm{bc}(\mathbb{R})$ with respect to the inner product above.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 3.5.2 (Plancherel's theorem)</h3>
+<div class="para">
+</div>
+<div class="para">
+If $f \in L^1_\mathrm{bc}(\mathbb{R})$, then we have $\hat{f} \in L^2_\mathrm{bc}(\mathbb{R})$, and
+\[  ||f||_2 = ||\hat{f}||_2.
+\]In particular, the Fourier transform extends to a unitary map $L^2(\mathbb{R}) \rightarrow L^2(\mathbb{R})$.
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

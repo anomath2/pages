@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+3.3. The Transform{D05_3_3}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+3.3. The Transform<span id="D05_3_3"></span></h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+For $f \in L^1_\mathrm{bc}(\mathbb{R})$, define its <em>Fourier transform</em> $\hat{f}$ by
+\[  \hat{f}(y) := \int_{-\infty}^\infty f(x) e^{-2\pi i xy} dx.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 3.3.1</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $f \in L^1_\mathrm{bc}(\mathbb{R})$.
+<ul>
+  <li>
+ (a) If $g(x) = f(x) e^{2\pi i ax}$ for some $a \in \mathbb{R}$, then $\hat{g}(y) = \hat{f}(y-a)$.
+  </li>
+<li>
+ (b) If $g(x) = f(x-a)$ for some $a \in \mathbb{R}$, then $\hat{g}(y) = \hat{f}(y) e^{-2\pi i ay}$.
+  </li>
+<li>
+ (c) If $g \in L^1_\mathrm{bc}(\mathbb{R})$ and $h = f * g$, then $\hat{h}(y) = \hat{f}(y) \hat{g}(y)$.
+  </li>
+<li>
+ (d) If $g(x) = f(x/\lambda)$ for some $\lambda > 0$, then $\hat{g}(y) = \lambda \hat{f}(y)(\lambda y)$.
+  </li>
+<li>
+ (g) If $f$ is two times continuously differentiable and the functions $f', f''$ are all in $L^1_\mathrm{bc}(\mathbb{R})$, then $\hat{f} \in L^1_\mathrm{bc}(\mathbb{R})$.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\mathcal{S} = \mathcal{S}(\mathbb{R})$ denote the space of <em>Schwartz functions</em>, i.e., the set of all infinitely differentiable functions $f: \mathbb{R} \rightarrow \mathbb{C}$ such that for every $m,n \geq 0$, we have
+\[  \sigma_{m,n}(f) := \sup_{x \in \mathbb{R}} |x^m f^{(n)}(x)| < \infty.
+\]</div>
+<div class="para">
+For example,
+\[  e^{-x^2} \in \mathcal{S}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Proposition 3.3.3</h3>
+<div class="para">
+</div>
+<div class="para">
+We have $\mathcal{S} \subset L^1_\mathrm{bc}(\mathbb{R})$, and for each $f \in \mathcal{S}$, we have $\hat{f} \in \mathcal{S}$.
+</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>

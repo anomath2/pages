@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <title>
-Reviews</title>
+3.6. The Poisson Summation Formula{D05_3_6}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="..\home.html">
+<base href="..\..\..\home.html">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
 </script>
 <script type="text/x-mathjax-config" defer>
@@ -37,33 +37,35 @@ displayIndent: '2em'
 <article class="art">
 <div class="flexContainer__spaceBetween">
 <h2 class="art_ttl">
-Reviews</h2>
+3.6. The Poisson Summation Formula<span id="D05_3_6"></span></h2>
 </div>
 <section class="sect">
 <h3 class="sect_ttl">
-<span id="review"></span></h3>
+</h3>
 <div class="para">
 </div>
 <div class="para">
-<ul>
-  <li>
- <a href="" class="myref" name="D05">[D05] A First Course in Harmonic Analysis, Second Edition</a>
-  </li>
-<li>
- <a href="" class="myref" name="Kol14">[Kol14] Quantum symmetric Kac-Moody pairs</a>
-  </li>
-<li>
- <a href="" class="myref" name="KlS97">[KlS97] Quantum Groups and Their Representations</a>
-  </li>
-<li>
- <a href="" class="myref" name="Lus10">[Lus10] Introduction to Quantum Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="NS95">[NS95] Quantum symmetric spaces and related $q$-orthogonal polynomials</a>
-</li>
-</ul>
+We bring together Fourier analysis on $\mathbb{R}$ and on $\mathbb{R}/\mathbb{Z}$ to derive the beautiful and expedient Poisson summation formula.
 </div>
 <div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 3.6.1</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $f \in L^1_\mathrm{bc}(\mathbb{R})$ be such that $f$ is a piecewise continuously differentiable with the possible exception of finitely many points.
+Let
+\[  \varphi(x) := \begin{cases}
+    f'(x) & \text{ if it exists}, \\
+    0 & \text{ otherwise}.
+  \end{cases}
+\]Assume that $x^2 f(x)$ and $x^2 \varphi(x)$ are bounded.
+Then, the Poisson summation formula
+\[  \sum_{k \in \mathbb{Z}} f(k) = \sum_{k \in \mathbb{Z}} \hat{f}(k)
+\]holds.
 </div>
 </section>
 </article>
