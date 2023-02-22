@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <title>
-[D05] A First Course in Harmonic Analysis, Second Edition{D05}</title>
+11.3. The Peter-Weyl Theorem{D05_11_3}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="..\..\home.html">
+<base href="..\..\..\home.html">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
 </script>
 <script type="text/x-mathjax-config" defer>
@@ -37,7 +37,7 @@ displayIndent: '2em'
 <article class="art">
 <div class="flexContainer__spaceBetween">
 <h2 class="art_ttl">
-[D05] A First Course in Harmonic Analysis, Second Edition<span id="D05"></span></h2>
+11.3. The Peter-Weyl Theorem<span id="D05_11_3"></span></h2>
 </div>
 <section class="sect">
 <h3 class="sect_ttl">
@@ -45,43 +45,28 @@ displayIndent: '2em'
 <div class="para">
 </div>
 <div class="para">
-<ul>
-  <li>
- <a href="" class="myref" name="D05_1">Chapter 1. Fourier Series</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_2">Chapter 2. Hilbert Spaces</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_3">Chapter 3. The Fourier Transform</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_5">Chapter 5. Finite Abelian Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_6">Chapter 6. LCA Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_7">Chapter 7. The Dual Group</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_8">Chapter 8. Plancherel Theorem</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_9">Chapter 9. Matrix Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_11">Chapter 11. The Peter-Weyl Theorem</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_notation">Notation</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_terminology">Terminology</a>
-</li>
-</ul>
+Let $K$ be a compact group, and $\hat{K}_\mathrm{fin}$ the set of isomorphism classes of finite-dimensional irreducible unitary representation of $K$.
 </div>
 <div class="para">
+For each $\tau \in \hat{K}_\mathrm{fin}$, choose an orthonormal basis $e_1,\dots,e_n$ of $\tau$, and set
+\[  \tau_{i,j}(k) := \langle k e_i, e_j \rangle \ \text{ for all } k \in K.
+\]The maps $\tau_{i,j} : K \rightarrow \mathbb{C}$ are called the <em>matrix coefficients</em> of $\tau$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 11.3.1 (Peter-Weyl)</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\tau, \gamma \in \hat{K}_\mathrm{fin}$.
+Then,
+\[  \int_K \tau_{i,j}(k) \overline{\gamma_{r,s}(k)} dk = \delta_{\tau, \gamma} \delta_{i,r} \delta_{j,s} \frac{1}{\dim \tau}.
+\]The family
+\[  (\sqrt{\dim \tau} \tau_{i,j})_{\tau,i,j}
+\]forms an orthonormal basis of the Hilbert space $L^2(K)$.
 </div>
 </section>
 </article>

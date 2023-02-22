@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <title>
-[D05] A First Course in Harmonic Analysis, Second Edition{D05}</title>
+11.4. A Reformulation{D05_11_4}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="..\..\home.html">
+<base href="..\..\..\home.html">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
 </script>
 <script type="text/x-mathjax-config" defer>
@@ -37,7 +37,7 @@ displayIndent: '2em'
 <article class="art">
 <div class="flexContainer__spaceBetween">
 <h2 class="art_ttl">
-[D05] A First Course in Harmonic Analysis, Second Edition<span id="D05"></span></h2>
+11.4. A Reformulation<span id="D05_11_4"></span></h2>
 </div>
 <section class="sect">
 <h3 class="sect_ttl">
@@ -45,43 +45,34 @@ displayIndent: '2em'
 <div class="para">
 </div>
 <div class="para">
-<ul>
-  <li>
- <a href="" class="myref" name="D05_1">Chapter 1. Fourier Series</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_2">Chapter 2. Hilbert Spaces</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_3">Chapter 3. The Fourier Transform</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_5">Chapter 5. Finite Abelian Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_6">Chapter 6. LCA Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_7">Chapter 7. The Dual Group</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_8">Chapter 8. Plancherel Theorem</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_9">Chapter 9. Matrix Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_11">Chapter 11. The Peter-Weyl Theorem</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_notation">Notation</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_terminology">Terminology</a>
-</li>
-</ul>
+Let $K$ be a compact matrix group.
+The group $K \times K$ acts on the space $C(K)$ of continuous functions on $K$ by
+\[  (k_1, k_2) f(k) = f(k_1^{-1} k k_2).
+\]This action is unitary, and hence extends to $L^2(K)$.
 </div>
 <div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 11.4.1</h3>
+<div class="para">
+</div>
+<div class="para">
+The matrix coefficients define a $K \times K$ isomorphism
+\[  L^2(K) \simeq \widehat{\bigoplus_{\tau \in \hat{K}_\mathrm{fin}}} \operatorname{End}(\tau),
+\]where $\hat{\oplus}$ means the Hilbert space completion of the algebraic direct sum.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 11.4.2</h3>
+<div class="para">
+</div>
+<div class="para">
+Every irreducible unitary representation of a compact matrix group $K$ is finite-dimensional, and thus $\hat{K}_\mathrm{fin}$ coincides with $\hat{K}$.
 </div>
 </section>
 </article>

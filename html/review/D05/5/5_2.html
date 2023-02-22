@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <title>
-[D05] A First Course in Harmonic Analysis, Second Edition{D05}</title>
+5.2. The Fourier Transform{D05_5_2}</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="..\..\home.html">
+<base href="..\..\..\home.html">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
 </script>
 <script type="text/x-mathjax-config" defer>
@@ -37,7 +37,7 @@ displayIndent: '2em'
 <article class="art">
 <div class="flexContainer__spaceBetween">
 <h2 class="art_ttl">
-[D05] A First Course in Harmonic Analysis, Second Edition<span id="D05"></span></h2>
+5.2. The Fourier Transform<span id="D05_5_2"></span></h2>
 </div>
 <section class="sect">
 <h3 class="sect_ttl">
@@ -45,43 +45,48 @@ displayIndent: '2em'
 <div class="para">
 </div>
 <div class="para">
-<ul>
-  <li>
- <a href="" class="myref" name="D05_1">Chapter 1. Fourier Series</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_2">Chapter 2. Hilbert Spaces</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_3">Chapter 3. The Fourier Transform</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_5">Chapter 5. Finite Abelian Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_6">Chapter 6. LCA Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_7">Chapter 7. The Dual Group</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_8">Chapter 8. Plancherel Theorem</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_9">Chapter 9. Matrix Groups</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_11">Chapter 11. The Peter-Weyl Theorem</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_notation">Notation</a>
-  </li>
-<li>
- <a href="" class="myref" name="D05_terminology">Terminology</a>
-</li>
-</ul>
+Let $A$ be a finite abelian group.
+Then, the Hilbert space $\ell^2(A)$ coincides with $\mathbb{C}^A$.
+In particular, characters are elements of $\ell^2(A)$.
 </div>
 <div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Lemma 5.2.1</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\chi,\eta \in \hat{A}$.
+Then,
+\[  \langle \chi, \eta \rangle = \delta_{\chi, \eta} |A|.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+For $f \in \ell^2(A)$, define its <em>Fourier transform</em> $\hat{f} \in \ell^2(\hat{A})$ by
+\[  \hat{f}(\chi) := \frac{1}{\sqrt{|A|}} \langle f, \chi \rangle = \frac{1}{\sqrt{|A|}} \sum_{a \in A} f(a) \overline{\chi(a)}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Theorem 5.2.2</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $A$ be a finite abelian group.
+The map
+\[  \ell^2(A) \rightarrow \ell^2(\hat{A});\ f \mapsto \hat{f}
+\]is an isomorphism of Hilbert spaces.
 </div>
 </section>
 </article>
