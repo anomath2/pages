@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+{Let04_1}1. Introduction</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+<span id="Let04_1"></span>1. Introduction</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+A classical result shows that the zonal spherical functions associated to real compact symmetric spaces can be realized as Jacobi polynomials.
+There is an analogous result for $p$-adic symmetric spaces.
+The Macdonald polynomials provide a unified context for the polynomial families used in these parallel theories.
+</div>
+<div class="para">
+In the 1980s, Koornwinder and Macdonald asked whether one could obtain a similar description of quantum zonal spherical functions.
+This conjecture was investigated extensively in the 1990s by Noumi, Sugitani, Dijkhuizen, Stokman and others when the underlying Lie algebras is of classical type.
+The main result of this paper is an answer to Koornwinder and Macdonald's question for all quantum symmetric pairs with reduced restricted root systems, thus generalizing these earlier works to include Lie algebras of exceptional type.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+The first problem faced in the quantum case was the actual definition of quantum symmetric pairs.
+The initial breakthrough was made by Koornwinder <a href="K93" class="cite">[K93]</a>, who constructed quantum $2$ spheres and computed their zonal spherical functions by inventing quantum analogues of the symmetric pair $(\mathfrak{sl}_2, \mathfrak{so}_2)$.
+</div>
+<div class="para">
+Noumi <a href="N96" class="cite">[N96]</a> extended Koornwinder's approach to two families of symmetric pairs of type $A_n$, using two-sided coideal analogues of $\mathfrak{g}^\theta$ inside $U_q(\mathfrak{g})$.
+He showed the corresponding zonal spherical functions are Macdonald polynomials.
+</div>
+<div class="para">
+In <a href="NS95" class="cite">[NS95]</a>, Noumi and Sugitani introduced one-sided coideal analogues of $U(\mathfrak{g}^\theta)$ inside of $U_q(\mathfrak{g})$ for other cases when $\mathfrak{g}$ is of classical type.
+</div>
+<div class="para">
+Dijkhuizen <a href="D96" class="cite">[D96]</a> conjectures that coideals are the correct objects to use in order to develop a general theory of quantum symmetric pairs, the corresponding symmetric spaces, and their zonal spherical functions.
+</div>
+<div class="para">
+In <a href="Let99" class="cite">[Let99]</a> and <a href="Let02" class="cite">[Let02]</a>, a universal method was developed for constructing left coideal subalgebras of $U_q(\mathfrak{g})$ which specialize to $U(\mathfrak{g}^\theta)$ as $q$ goes to $1$.
+A complete list of the generators and relations for all possible symmetric pairs is given in <a href="Let03" class="cite">[Let03]</a>.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\mathcal{B}_\theta$ denote the orbit of the analogues of $U(\mathfrak{g}^\theta)$ in $U_q(\mathfrak{g})$ under the group $\mathbf{H}$ of Hopf algebra automorphisms of $U_q(\mathfrak{g})$ fixing the Cartan part.
+For each $B,B' \in \mathcal{B}_\theta$, one can associate the space ${}_{B'} \mathcal{H}_B$ of left $B'$ and right $B$ invariants inside the quantized function algebra $R_q[G]$ corresponding to $\mathfrak{g}$.
+Viewing elements of $R_q[G]$ as functions on $U_q(\mathfrak{g})$, restriction to the Cartan part of $U_q(\mathfrak{g})$ yields an algebra homomorphism $\Upsilon$ from ${}_{B'} \mathcal{H}_B$ into the character group ring associated to the restricted root system.
+</div>
+<div class="para">
+Zonal spherical functions are joint eigenvectors in ${}_{B'} \mathcal{H}_B$ with respect to the action of the center of $U_q(\mathfrak{g})$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+References</h3>
+<ul class="para twoColList">
+  <li>
+<div class="twoColList_1st" id="D96">
+<a href="bibliography\items\D96.html">[D96]</a></div>
+<div class="twoColList_2nd">
+ M.\ S.\ Dijkhuizen, Some remarks on the construction of quantum symmetric spaces, Representations of Lie groups, Lie algebras and their quantum analogues, Acta Appl. Math. 44 (1996), no. 1-2, 59--80.
+  </div>
+</li>
+<li>
+<div class="twoColList_1st" id="K93">
+<a href="bibliography\items\K93.html">[K93]</a></div>
+<div class="twoColList_2nd">
+ T.\ H.\ Koornwinder, Askey-Wilson polynomials as zonal spherical functions on the $SU(2)$ quantum group, SIAM J. Math. Anal. 24 (1993), no. 3, 795--813.
+  </div>
+</li>
+<li>
+<div class="twoColList_1st" id="Let99">
+<a href="bibliography\items\Let99.html">[Let99]</a></div>
+<div class="twoColList_2nd">
+ G. Letzter, Symmetric pairs for quantized enveloping algebras, J. Algebra 220 (1999), no. 2, 729--767.
+  </div>
+</li>
+<li>
+<div class="twoColList_1st" id="Let02">
+<a href="bibliography\items\Let02.html">[Let02]</a></div>
+<div class="twoColList_2nd">
+ G. Letzter, Coideal subalgebras and quantum symmetric pairs, New directions in Hopf algebras, 117--165, Math. Sci. Res. Inst. Publ., 43, Cambridge Univ. Press, Cambridge, 2002.
+  </div>
+</li>
+<li>
+<div class="twoColList_1st" id="Let03">
+<a href="bibliography\items\Let03.html">[Let03]</a></div>
+<div class="twoColList_2nd">
+ G. Letzter, Quantum symmetric pairs and their zonal spherical functions, Transform. Groups 8 (2003), no. 3, 261--292.
+  </div>
+</li>
+<li>
+<div class="twoColList_1st" id="N96">
+<a href="bibliography\items\N96.html">[N96]</a></div>
+<div class="twoColList_2nd">
+ M. Noumi, Macdonald's symmetric polynomials as zonal spherical functions on some quantum homogeneous spaces, Adv. Math. 123 (1996), no. 1, 16--77.
+  </div>
+</li>
+<li>
+<div class="twoColList_1st" id="NS95">
+<a href="bibliography\items\NS95.html">[NS95]</a></div>
+<div class="twoColList_2nd">
+ M. Noumi and T. Sugitani, Quantum symmetric spaces and related $q$-orthogonal polynomials, Group theoretical methods in physics (Toyonaka, 1994), 28--40, World Sci. Publ., River Edge, NJ, 1995.
+</div>
+</li>
+</ul>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
