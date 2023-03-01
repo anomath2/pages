@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+{D96_1}1. Classical Compact Symmetric Spaces</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+<span id="D96_1"></span>1. Classical Compact Symmetric Spaces</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+The material treated in this section is well known by now <a href="HS94" class="cite">[HS94]</a>, <a href="H00" class="cite">[H00]</a>, <a href="H01" class="cite">[H01]</a>.
+</div>
+<div class="para">
+Let $G$ be a compact connected simple Lie group.
+To simplify our statements we assume that $G$ is simply connected, but this is not essential.
+Let $K \subset G$ be a closed subgroup such that there exists a (necessarily unique) involutive automorphism $\theta$ on $G$ with $G^\theta_0 \subset K \subset G^\theta$.
+Here $G^\theta$ denotes the subgroup of fixed points of $\theta$, $G^\theta_0$ its connected component of the identity.
+Then the pair $(G, K)$ is an irreducible Riemannian symmetric pair, and the $G$-homogeneous space $G/K$ is an irreducible Riemannian symmetric space of compact type I (in the terminology of Helgason <a href="H01" class="cite">[H01]</a>).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+The pair $(G, K)$ is a Gelfand pair, i.e., for each finite-dimensional irreducible representation $\pi$ of $G$, the trivial representation of $K$ occurs at most once in the irreducible decomposition of $\pi$ as a representation of $K$.
+Those irreducible representations of G that have nonzero $K$-fixed vectors are called spherical representations. 
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\mathcal{D}(G/K)$ denote the algebra of left $G$-invariant differential operators on the space $G/K$.
+A (zonal) spherical function is by definition a $K$-bi-invariant differentiable function on $G$ which is a joint eigenfunction of all differential operators $D \in \mathcal{D}(G/K)$. 
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $P^+$ denote the set of dominant weights for $G$.
+Let $P^+_K \subset P^+$ denote the subset consisting of $\lambda \in P^+$ such that the irreducible representation $G(\lambda)$ is spherical.
+If we write $\mathcal{H}$ for the algebra of $K$-bi-invariant (continuous) representative functions on $G$, then there is the canonical decomposition
+\[  \mathcal{H} = \bigoplus_{\lambda \in P^+_K} \mathcal{H}(\lambda),
+\]where $\mathcal{H}(\lambda)$ is the intersection of $\mathcal{H}$ and the subspace $W(\lambda) \subset L^2(G)$ spanned by
+the matrix coefficients of the representation $V(\lambda)$.
+Each $\mathcal{H}(\lambda)$ is one-dimensional.
+A nonzero $\varphi_\lambda \in \mathcal{H}(\lambda)$ is a spherical function, and all spherical functions are obtained in this way.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+References</h3>
+<ul class="para twoColList">
+  <li>
+<div class="twoColList_1st" id="HS94">
+<a href="bibliography\items\HS94.html">[HS94]</a></div>
+<div class="twoColList_2nd">
+ G.\ J.\ Heckman and H.\ Schlichtkrull, Harmonic Analysis and Special Functions on Symmetric Spaces, Perspectives in Mathematics, 16. Academic Press, Inc., San Diego, CA, 1994. xii+225 pp.
+  </div>
+</li>
+<li>
+<div class="twoColList_1st" id="H00">
+<a href="bibliography\items\H00.html">[H00]</a></div>
+<div class="twoColList_2nd">
+ S.\ Helgason, Groups and Geometric Analysis, Integral Geometry, Invariant Differential Operators, and Spherical Functions, Corrected Reprint of The 1984 Original, Mathematical Surveys and Monographs, 83. American Mathematical Society, Providence, RI, 2000. xxii+667 pp.
+  </div>
+</li>
+<li>
+<div class="twoColList_1st" id="H01">
+<a href="bibliography\items\H01.html">[H01]</a></div>
+<div class="twoColList_2nd">
+ S.\ Helgason, Differential Geometry, Lie Groups, and Symmetric Spaces, Corrected Reprint of The 1978 Original, Graduate Studies in Mathematics, 34. American Mathematical Society, Providence, RI, 2001. xxvi+641 pp.
+</div>
+</li>
+</ul>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
