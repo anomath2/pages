@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+{GW09_1_1}1.1. The Classical Groups</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+<span id="GW09_1_1"></span>1.1. The Classical Groups</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+Abstract</h3>
+<div class="para">
+</div>
+<div class="para">
+The classical groups are the groups of invertible linear transformations of finite-dimensional vector spaces over the real, complex, and quaternion fields, together with the subgroups that preserve a volume form, a bilinear form, or a sesquilinear form (the forms being nondegenerate and symmetric or skew-symmetric).
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.1.1. General and Special Linear Groups</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\mathbb{F}$ denote either the field $\mathbb{R}$ or $\mathbb{C}$, and let $V$ be a finite-dimensional vector space over $\mathbb{F}$.
+The set of invertible linear transformations from $V$ to $V$ will be denoted by $GL(V)$.
+</div>
+<div class="para">
+Let $V$ and $W$ be finite-dimensional vector spaces over $\mathbb{F}$.
+Let $\{ v_1,\dots, v_n \}$ and $\{ w_1,\dots, w_m \}$ be bases for $V$ and $W$, respectively.
+If $T : V \rightarrow W$ is a linear map, then
+\[  T v_j = \sum_{i=1}^m a_{i,j} w_i
+\]with $a_{i,j} \in \mathbb{F}$.
+The numbers $a_{i,j}$ are called the <em>matrix coefficients</em> or entries of $T$ with respect to the two bases, and the matrix
+\[  A = (a_{i,j})_{1 \leq i \leq m,\ 1 \leq j \leq n}
+\]is called the <em>matrix</em> of $T$ with respect to the two bases.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $GL(n, \mathbb{F})$ denote the set of $n \times n$ invertible matrices with coefficients in $\mathbb{F}$.
+It is called the <em>general linear group of rank $n$</em>.
+</div>
+<div class="para">
+If $V$ is an $n$-dimensional vector space, then there exists a group isomorphism $GL(V) \rightarrow GL(n, \mathbb{F})$ for each basis of $V$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Special Linear Group</h3>
+<div class="para">
+</div>
+<div class="para">
+The <em>special linear group</em> $SL(n, \mathbb{F})$ is the set of all elements $A \in GL(n, \mathbb{F})$ such that $\det(A) = 1$.
+</div>
+<div class="para">
+If $V$ is an $n$-dimensional vector space, and $\mu: GL(V) \rightarrow GL(n, \mathbb{F})$ the group isomorphism associated with a basis of $V$.
+Then, $SL(V) := \mu^{-1}(SL(n, \mathbb{F}))$ is independent of the basis.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.1.2. Isometry Groups of Bilinear Forms</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be an $n$-dimensional vector space over $\mathbb{F}$, and $B : V \times V \rightarrow \mathbb{F}$ a bilinear form.
+Let $O(V, B)$ or $O(B)$ denote the set of all $g \in GL(V)$ such that
+\[  B(gv, gw) = B(v,w) \ \text{ for all } v,w \in V.
+\]It is called the <em>isometry group</em> of the form $B$.
+</div>
+<div class="para">
+Let $\{ v_1,\dots,v_n \}$ be a basis of $V$, and set
+\[  \Gamma_{i,j} := B(v_i, v_j).
+\]If $A = (a_{i,j})_{i,j}$ be the matrix of an element $g$ of $GL(V)$.
+Then, we have $g \in O(B)$ if and only if
+\[  {}^t A \Gamma A = \Gamma,
+\]where $\Gamma := (\Gamma_{i,j})_{i,j}$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Orthogonal Groups</h3>
+<div class="para">
+</div>
+<div class="para">
+Set
+\[  O(n, \mathbb{F}) := \{ g \in GL(n, \mathbb{F}) \mid g \cdot {}^t g = I \}.
+\]It is called the <em>orthogonal group</em>.
+</div>
+<div class="para">
+When $\mathbb{F} = \mathbb{R}$, for $p,q \in \mathbb{Z}_{\geq 0}$ with $p + q = n$, define the <em>indefinite orthogonal groups</em> by
+\[  O(p,q) := \{ g \in GL(n, \mathbb{R}) \mid {}^t g I_{p,q} g = I_{p,q} \}, \quad I_{p,q} := \begin{pmatrix}
+    I_p & O \\
+    O & -I_q
+  \end{pmatrix}.
+\]</div>
+<div class="para">
+Note that
+\[  O(n,0) = O(0,n) = O(n, \mathbb{R}).
+\]</div>
+<div class="para">
+Set
+\[  s := \begin{pmatrix}
+    0 & 0 & \cdots & 1 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 1 & \cdots & 0 \\
+    1 & 0 & \cdots & 0 \\
+  \end{pmatrix}.
+\]Then,
+\[  O(p,q) \rightarrow O(q,p);\ g \mapsto sgs
+\]is a group isomorphism.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Lemma 1.1.2</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be an $n$-dimensional vector space over $\mathbb{F}$, and $B$ a symmetric nondegenerate bilinear form on $V$.
+<ul>
+  <li>
+ 1. If $\mathbb{F} = \mathbb{C}$, then there exists a basis $\{ v_1,\dots,v_n \}$ of $V$ such that $B(v_i, v_j) = \delta_{i,j}$.
+  </li>
+<li>
+ 2. If $\mathbb{F} = \mathbb{R}$, then there exist $p,q \in \mathbb{Z}_{\geq 0}$ with $p+q = n$, and a basis $\{ v_1,\dots,v_n \}$ of $V$ such that $B(v_i, v_j) = \epsilon_i \delta_{i,j}$, where
+  \[
+    \epsilon_i := \begin{cases}
+      1 & \text{ if } 1 \leq i \leq p, \\
+      -1 & \text{ if } p < i \leq n.
+    \end{cases}
+  \]
+  Furthermore, the pair $(p,q)$ is independent of the basis.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Remark 1.1.3</h3>
+<div class="para">
+</div>
+<div class="para">
+The basis of $V$ in Lemma 1.1.2 (2) is called a <em>pseudo-orthonormal basis</em>, and the number $p-q$ is called the <em>signature</em> of $B$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Proposition 1.1.4</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be an $n$-dimensional vector space over $\mathbb{F}$, and $B$ a symmetric nondegenerate bilinear form on $V$.
+<ul>
+  <li>
+ 1. If $\mathbb{F} = \mathbb{C}$, then $O(V,B) \simeq O(n, \mathbb{C})$.
+  </li>
+<li>
+ 2. If $\mathbb{F} = \mathbb{R}$, then there exist unique $p,q \in \mathbb{Z}_{\geq 0}$ with $p+q = n$ such that $O(V, B) \simeq O(p,q)$.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+The <em>special orthogonal group</em> is the subgroup
+\[  SO(n, \mathbb{F}) := SL(n, \mathbb{F}) \cap O(n, \mathbb{F}).
+\]The <em>indefinite special orthogonal groups</em> are the subgroups
+\[  SO(p,q) := SL(p+q, \mathbb{R}) \cap O(p,q).
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Symplectic Group</h3>
+<div class="para">
+</div>
+<div class="para">
+For $n \in \mathbb{Z}_{> 0}$, set
+\[  J = J_n := \begin{pmatrix}
+    O & I_n \\
+    -I_n & O
+  \end{pmatrix}.
+\]The <em>symplectic group</em> is defined to be
+\[  Sp(n,\mathbb{F}) := \{ g \in GL(2n, \mathbb{F}) \mid {}^t g J g = J \}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Lemma 1.1.5</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be a $2n$-dimensional vector space over $\mathbb{F}$, and $B$ a nondegenerate skew-symmetric bilinear form on $V$.
+Then, there exists a basis $\{ v_1,\dots,v_n \}$ of $V$ such that $B(v_i,v_j)$ equals the $(i,j)$-th entry of $J$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Proposition 1.1.6</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be a $2n$-dimensional vector space over $\mathbb{F}$, and $B$ a skew-symmetric nondegenerate bilinear form on $V$.
+Then, $O(V,B) \simeq Sp(n, \mathbb{F})$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.1.3. Unitary Groups</h3>
+<div class="para">
+</div>
+<div class="para">
+The <em>unitary group</em> of rank $n \in \mathbb{Z}_{> 0}$ is the group
+\[  U(n) := \{ g \in GL(n, \mathbb{C}) \mid gg^* = I \}.
+\]The <em>special unitary group</em> is
+\[  SU(n) := SL(n, \mathbb{C}) \cap U(n).
+\]The <em>indefinite unitary group</em> of signature $(p,q)$ is
+\[  U(p,q) := \{ g \in GL(n, \mathbb{C}) \mid g^* I_{p,q} g = I_{p,q} \}.
+\]The <em>special indefinite unitary group</em> of signature $(p,q)$ is
+\[  SU(p,q) := SL(n, \mathbb{C}) \cap U(p,q).
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be an $n$-dimensional $\mathbb{C}$-vector space, and $B$ a Hermitian form on $V$.
+Set
+\[  U(V, B) := \{ g \in GL(V) \mid B(gv,gw) = B(v,w)\ \text{ for all } v,w \in V \}.
+\]We call it the <em>unitary group</em> of $B$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Lemma 1.1.7</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be an $n$-dimensional vector space over $\mathbb{C}$ and let $B$ a nondegenerate Hermitian form on $V$.
+Then there exist integers $p,q \in \mathbb{Z}_{\geq 0}$, with $p+q = n$, and a basis $\{ v_1,\dots,v_n \}$ of $V$ such that $B(v_i
+, v_j) = \epsilon_i \delta_{i,j}$, where
+\[  \epsilon_i := \begin{cases}
+    1 & \text{ if } 1 \leq i \leq p, \\
+    -1 & \text{ if } p < i \leq n.
+  \end{cases}
+\]Furthermore, the pair $(p,q)$ is independent of the basis.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Proposition 1.1.8</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be an $n$-dimensional vector space over $\mathbb{C}$ and let $B$ a nondegenerate Hermitian form on $V$.
+Then, there exist unique $p,q \in \mathbb{Z}_{\geq 0}$ with $p+q = n$ such that $U(V,B) \simeq U(p,q)$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Quaternionic Groups</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $GL(n, \mathbb{H})$ denote the group of invertible $n \times n$ matrices over $\mathbb{H}$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Quaternionic Special Linear Group</h3>
+<div class="para">
+</div>
+<div class="para">
+Set
+\[  SU^*(2n) := \{ g \in GL(n, \mathbb{H}) \mid det(g) = 1 \}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+The Quaternionic Unitary Groups</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $p+q = n$.
+The <em>indefinite quaternionic unitary groups</em> are
+\[  Sp(p,q) := \{ g \in GL(n, \mathbb{H}) \mid g^* I_{p,q} g = I_{p,q} \}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+The Group $SO^*(2n)$</h3>
+<div class="para">
+</div>
+<div class="para">
+Set
+\[  SO^*(2n) := \{ g \in SO(2n, \mathbb{C}) \mid ^J \overline{g} J = g \}.
+\]</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
