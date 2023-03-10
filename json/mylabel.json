@@ -281,7 +281,7 @@
   "hopf_alg": "..\\dictionary\\hopf_alg\\index.html#hopf_alg",
   "rep_qua_grp_defs": "..\\dictionary\\qua_grp\\rep\\def.html#rep_qua_grp_defs",
   "KlS97": "..\\review\\KlS97\\index.html#KlS97",
-  "KlS97_notation": "..\\review\\KlS97\\preface.html#KlS97_notation",
+  "KlS97_notation": "..\\review\\KlS97\\notation.html#KlS97_notation",
   "KlS97_terminology": "..\\review\\KlS97\\terminology.html#KlS97_terminology",
   "hom_alg": "..\\dictionary\\alg\\def.html#hom_alg",
   "op_alg": "..\\dictionary\\alg\\def.html#op_alg",
@@ -381,5 +381,10 @@
   "GW09_notation": "..\\review\\GW09\\notation.html#GW09_notation",
   "GW09_terminology": "..\\review\\GW09\\terminology.html#GW09_terminology",
   "GW09_1_2": "..\\review\\GW09\\1\\2.html#GW09_1_2",
-  "GW09_1_3": "..\\review\\GW09\\1\\3.html#GW09_1_3"
+  "GW09_1_3": "..\\review\\GW09\\1\\3.html#GW09_1_3",
+  "GW09_1_4": "..\\review\\GW09\\1\\4.html#GW09_1_4",
+  "GW09_1_5": "..\\review\\GW09\\1\\5.html#GW09_1_5",
+  "KlS97_4_1": "..\\review\\KlS97\\4\\1.html#KlS97_4_1",
+  "KlS97_4": "..\\review\\KlS97\\4\\index.html#KlS97_4",
+  "KlS97_preface": "..\\review\\KlS97\\preface.html#KlS97_preface"
 }

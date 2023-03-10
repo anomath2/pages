@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+{GW09_1_4}1.4. Linear Algebraic Groups</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+<span id="GW09_1_4"></span>1.4. Linear Algebraic Groups</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Since each classical group $G \subset GL_n(\mathbb{F})$ is defined by algebraic equations, we can also study $G$ using algebraic techniques instead of analysis.
+We will take the field $\mathbb{F} = \mathbb{C}$ in this setting.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.4.1 Definitions and Examples</h3>
+<div class="para">
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition 1.4.1</h3>
+<div class="para">
+</div>
+<div class="para">
+A subgroup $G$ of $GL(n,\mathbb{C})$ is a <em>linear algebraic group</em> if there is a set $\mathcal{A}$ of polynomial functions on $M_n(\mathbb{C})$ such that
+\[  G = \{ g \in GL(n, \mathbb{C}) \mid f(g) = 0 \text{ for all } f \in \mathcal{A} \}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.4.2. Regular Functions</h3>
+<div class="para">
+</div>
+<div class="para">
+The set of regular functions on a linear algebraic group $G$ is denoted by $\mathcal{O}[G]$.
+For instance,
+\[  \mathcal{O}[GL(n,\mathbb{C})] = \mathbb{C}[x_{i,j}, \det(x)^{-1} \mid 1 \leq i,j \leq n].
+\]</div>
+<div class="para">
+In general,
+\[  \mathcal{O}[G] \simeq \mathcal{O}[GL(n, \mathbb{C})]/ \mathcal{J}_G, \quad \mathcal{J}_G := \{ f \in \mathcal{O}[GL(n,\mathbb{C})] \mid f(G) = 0 \}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.4.3. Lie Algebra of an Algebraic Group</h3>
+<div class="para">
+</div>
+<div class="para">
+The next step in developing the theory of algebraic groups over $\mathbb{C}$ is to associate a Lie algebra to a linear algebraic group $G$. We want the
+definition to be purely algebraic ($\exp$ is analytic).
+Our strategy is to adapt the vector field point of view.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition 1.4.6</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\mathcal{A}$ be an algebra (not assumed to be associative) over a field $\mathbb{F}$.
+Then $\operatorname{Der}(\mathcal{A}) \subset \operatorname{End}(\mathcal{A})$ is the set of all linear transformations $D$ that satisfy
+\[  D(ab) = D(a)b + a D(b) \ \text{ for all } a,b \in \mathcal{A}.
+\]We call $D$ a <em>derivation</em> of $\mathcal{A}$
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $G \subset GL(n,\mathbb{C})$ be a linear algebraic group.
+We define its Lie algebra $\mathfrak{g}$ by
+\[  \mathfrak{g} := \{ A \in \mathfrak{gl}(n, \mathbb{C}) \mid X_A f \in \mathcal{J}_G \text{ for all } f \in \mathcal{J}_G \},
+\]where
+\[  X_A := \sum_{i,j=1}^n a_{i,j} \sum_{k=1}^n x_{k,i} \frac{\partial}{\partial x_{k,j}} \text{ if } A = (a_{i,j}).
+\]</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
