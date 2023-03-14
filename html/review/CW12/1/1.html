@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+{CW12_1_1}1.1. Lie superalgebras: Definitions and examples</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="..\..\..\home.html">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" defer>
+</script>
+<script type="text/x-mathjax-config" defer>
+MathJax.Hub.Config({
+TeX: {
+    equationNumbers: { autoNumber: 'AMS' },
+    TagSide: "left"
+    },
+tex2jax: {
+    inlineMath: [ ['$','$'] ],
+    processEscapes: true
+},
+'HTML-CSS': { matchFontHeight: false },
+displayAlign: 'left',
+displayIndent: '2em'
+});
+</script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js">
+</script>
+<link rel="stylesheet" href="../css/my_style.css">
+<script src="../js/tex.js" defer>
+</script>
+</head>
+<body>
+<header>
+</header>
+<main class="main">
+<article class="art">
+<div class="flexContainer__spaceBetween">
+<h2 class="art_ttl">
+<span id="CW12_1_1"></span>1.1. Lie superalgebras: Definitions and examples</h2>
+</div>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+Throughout this book we will work over the field $\mathbb{C}$ of complex numbers.
+Let
+\[  \mathbb{Z}_2 = \{ \overline{0}, \overline{1 }\}
+\]denote the group of two elements and let $\mathfrak{S}_n$ denote the symmetric group in $n$ letters.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.1.1. Basic definitions</h3>
+<div class="para">
+</div>
+<div class="para">
+A vector <em>superspace</em> $V$ is a vector space endowed with a $\mathbb{Z}_2$-gradation:
+\[  V = V_{\overline{0}} \oplus V_{\overline{1}}.
+\]The dimension of the vector superspace $V$ is the tuple
+\[  \dim V = (\dim V_{\overline{0}} | V_{\overline{1}})
+\]or sometimes
+\[  \dim V = \dim V_{\overline{0}} + \dim V_{\overline{1}}
+\](which should be clear from the context).
+The superdimension of $V$ is defined to be
+\[  \operatorname{sdim} V := \dim V_{\overline{0}} - \dim V_{\overline{1}}.
+\]We denote the superspace with even subspace $\mathbb{C}^m$ and odd subspace $\mathcal{C}^n$ by $\mathbb{C}^{m|n}$.
+It has dimension $(m|n)$.
+The parity of a homogeneous element $a \in V_i$ is denoted by
+\[  |a| = i \in \mathbb{Z}_2.
+\]An element in $V_{\overline{0}}$ is called even, while an element in $V_{\overline{0}}$ is called odd.
+A subspace of a vector superspace $V$ is a
+vector superspace $W = W_{\overline{0}} \oplus W_{\overline{1}}$ with compatible $\mathbb{Z}_2$-gradation, i.e.,
+\[  W_i \subseteq V_i  \text{ for all } i \in \mathbb{Z}_2.
+\]</div>
+<div class="para">
+There is a parity reversing functor $\Pi$ on the category of vector superspaces.
+For a vector superspace $V$, we let
+\[  \Pi(V) = \Pi(V)_{\overline{0}} \oplus \Pi(V)_{\overline{1}}, \quad \Pi(V)_i = V_{i + \overline{1}}  \text{ for all } i \in \mathbb{Z}_2.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition 1.1</h3>
+<div class="para">
+</div>
+<div class="para">
+A <em>superalgebra</em> $A$, is a vector superspace equipped with a bilinear multiplication satisfying
+\[  A_i A_j \subseteq A_{i+j} \text{ for all } i,j \in \mathbb{Z}_2.
+\]A module $M$ over a superalgebra $A$ is always understood in the $\mathbb{Z}_2$-graded sense, that is
+\[  A_i M_j \subseteq M_{i+j} \text{ for all } i,j \in \mathbb{Z}_2.
+\]Subalgebras and ideals of superalgebras are also understood in the $\mathbb{Z}_2$-graded sense.
+A superalgebra that has no nontrivial ideal is called simple.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition 1.2</h3>
+<div class="para">
+</div>
+<div class="para">
+A <em>Lie superalgebra</em> is a superalgebra $\mathfrak{g}$ with bilinear multiplication $[,]$ satisfying the following two axioms:
+for homogeneous elements $a,b, c \in \mathfrak{g}$,
+<ul>
+  <li>
+ (1) Skew-supersymmetry: $[a,b] = -(-1)^{|a| |b|}[b, a]$.
+  </li>
+<li>
+ (2) Super Jacobi identity: $[a,[b,c]] = [[a,b],c] + (-1)^{|a||b|}[b,[a,c]]$.
+</li>
+</ul>
+A bilinear form $(,)$ on a Lie superalgebra $\mathfrak{g}$ is called invariant if
+\[  ([a,b],c) = (a,[b,c]) \text{ for all } a,b,c \in \mathfrak{g}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+For a Lie superalgebra $\mathfrak{g}$, the even part $\mathfrak{g}_{\overline{0}}$ is a Lie algebra.
+Hence, if $\mathfrak{g}_{\overline{1}}$, then $\mathfrak{g}$ is just a usual Lie algebra.
+</div>
+<div class="para">
+A Lie superalgebra $\mathfrak{g}$ with purely odd part, i.e., $\mathfrak{g}_{\overline{0}} = 0$, has to be abelian, i.e., $[\mathfrak{g},\mathfrak{g}] = 0$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Definition 1.3</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $\mathfrak{g}$ and $\mathfrak{g}'$ be Lie superalgebras.
+A homomorphism of Lie superalgebras is an even linear map $f : \mathfrak{g} \rightarrow \mathfrak{g}'$ satisfying
+\[  f([a,b]) = [f(a), f(b)] \text{ for all } a,b \in \mathfrak{g}.
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Example 1.4</h3>
+<div class="para">
+</div>
+<div class="para">
+<ul>
+  <li>
+ (1) Let $A$ be an associative superalgebra.
+  We can make $A$ into a Lie superalgebra by letting
+  \[
+    [a,b] := ab-(-1)^{|a||b|} ba
+  \]
+  for homogeneous $a,b \in A$ and extending $[,]$ by bilinearity.
+  </li>
+<li>
+ (2) Let $\mathfrak{g}$ be a Lie superalgebra.
+  Then $\operatorname{End}(\mathfrak{g})$ is an associative superalgebra, and hence it carries a structure of a Lie superalgebra by (1).
+  We define the adjoint map
+  \[
+    \operatorname{ad}: \mathfrak{g} \rightarrow \operatorname{End}(\mathfrak{g})
+  \]
+  by
+  \[
+    \operatorname{ad}(a)(b) := [a,b]  \text{ for all } a,b \in \mathfrak{g}.
+  \]
+  Then $\operatorname{ad}$ is a homomorphism of Lie superalgebras due to the super Jacobi identity.
+  The resulting action of $\mathfrak{g}$ on itself is called the adjoint action.
+  </li>
+<li>
+ (3) Let $A$ be a superalgebra.
+  An endomorphism $D \in \operatorname{End}(A)_s$, for
+  $s \in \mathbb{Z}_2$, is called a derivation of degree $s$ if it satisfies that
+  \[
+    D(ab) = D(a)b + (-1)^{s |a|} a D(b) \text{ for all } a,b \in A.
+  \]
+  Denote by $\operatorname{Der}(A)_s$ the space of derivations on $A$ of degree $s$.
+  One verifies that the superspace of derivations of $A$, $\operatorname{Der}(A) := \operatorname{Der}(A)_{\overline{0}} \oplus \operatorname{Der}(A)_{\overline{1}}$, is a subalgebra of the Lie superalgebra $\operatorname{End}(A)$.
+  In the case when $\mathfrak{g}$ is a Lie superalgebra, we have
+  \[
+    \operatorname{ad}(g) \in \operatorname{Der}(\mathfrak{g}) \text{ for all } g \in \mathfrak{g},
+  \]
+  by the super Jacobi identity.
+  Indeed, such derivations are called inner derivations.
+  The inner derivations form an ideal in $\operatorname{Der}(\mathfrak{g})$.
+  </li>
+<li>
+ (4) Let $\mathfrak{g}$ be a superspace such that $\mathfrak{g}_{\overline{0}} = \mathbb{C} z$ is one-dimensional.
+  Suppose that we have a symmetric bilinear form $B(,)$ on $\mathfrak{g}_{\overline{1}}$.
+  We can make $\mathfrak{g}$ into a Lie superalgebra by letting $z$ commute with $\mathfrak{g}$ and declaring
+  \[
+    [v,w] := B(v,w)z \text{ for all } v,w \in \mathfrak{g}_{\overline{1}}.
+  \]
+  The special cases when $B(,)$ is zero and when $B(,)$ is non-degenerate, respectively, are of particular interest.
+  Indeed, their corresponding universal enveloping superalgebras (see Section 1.5.1) are isomorphic to the exterior and Clifford superalgebras of Section 1.1.6 and Definition 3.33, respectively.
+</li>
+</ul>
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Remark 1.5</h3>
+<div class="para">
+</div>
+<div class="para">
+To a Lie superalgebra $\mathfrak{g}$ we associate the following data:
+<ul>
+  <li>
+ (1) A Lie algebra $\mathfrak{g}_{\overline{0}}$.
+  </li>
+<li>
+ (2) A $\mathfrak{g}_{\overline{0}}$-module $\mathfrak{g}_{\overline{1}}$ induced by the adjoint action.
+  </li>
+<li>
+ (3) A $\mathfrak{g}_{\overline{0}}$-homomorphism $S^2(\mathfrak{g}_{\overline{1}}) \rightarrow \mathfrak{g}_{\overline{0}}$ induced by the Lie bracket.
+  </li>
+<li>
+ (4) The condition coming from Definition 1.2 (2) with $a,b,c \in \mathfrak{g}_{\overline{1}}$.
+</li>
+</ul>
+Conversely, the above data determine a Lie superalgebra structure on $\mathfrak{g}_{\overline{0}} \oplus \mathfrak{g}_{\overline{1}}$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+1.1.2. The general and special linear Lie superalgebras</h3>
+<div class="para">
+</div>
+<div class="para">
+Let $V$ be a vector superspace so that $\operatorname{End}(V)$ is an associative superalgebra.
+As in Example 1.4(1), $\operatorname{End}(V)$, equipped with the supercommutator, forms a Lie superalgebra called the <em>general linear Lie superalgebra</em> and denoted by $\mathfrak{gl}(V)$.
+When $V = \mathbb{C}^{m|n}$, we also write $\mathfrak{gl}(m|n)$ for $\mathfrak{gl}(V)$.
+</div>
+<div class="para">
+Set
+\[  I(m|n) := \{ \overline{1}, \dots, \overline{m}; 1, \dots, n \}
+\]with total order
+\[  \overline{1} < \cdots < \overline{m} < 0 < 1 < \cdots < n.
+\]Here $0$ is inserted for notational convenience later on.
+Then, $\mathfrak{gl}(V)$ can be realized as $(m+n) \times (m+n)$ complex matrices of the block form
+\[  g = \begin{pmatrix}
+    a & b \\
+    c & d
+  \end{pmatrix}
+\]such that $\mathfrak{gl}(V)_{\overline{0}}$ consists of those with $b = c = 0$, while $\mathfrak{gl}(V)_{\overline{1}}$ with $a = d = 0$.
+</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+Remark 1.6</h3>
+<div class="para">
+</div>
+<div class="para">
+We have an isomorphism of Lie superalgebras from $\mathfrak{gl}(V)$ to $\mathfrak{gl}(\Pi V)$ by sending $T$ to $\Pi T \Pi^{-1}$.
+When $\dim V = (m|n)$, we obtain an isomorphism of Lie superalgebras
+\[  \mathfrak{gl}(m|n) \simeq \mathfrak{gl}(n|m).
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+For each element $g \in \mathfrak{gl}(m|n)$ of the matrix form, we define the supertrace as
+\[  \operatorname{str}(g) := \operatorname{tr}(a) - \operatorname{tr}(d).
+\]The subspace
+\[  \mathfrak{sl}(m|n) := \{ g \in \mathfrak{gl}(m|n) \mid \operatorname{str}(g) = 0 \}
+\]is a subalgebra of $\mathfrak{gl}(m|n)$, and it is called the special linear Lie superalgebra.
+One verifies directly that
+\[  [\mathfrak{gl}(m|n), \mathfrak{gl}(m|n)] = \mathfrak{sl}(m|n).
+\]</div>
+<div class="para">
+</div>
+</section>
+<section class="sect">
+<h3 class="sect_ttl">
+</h3>
+<div class="para">
+</div>
+<div class="para">
+For $A = \sum_{i,j} a_{i,j} E_{i,j} \in \mathfrak{gl}(m|n)$, define its <em>supertranspose</em> $A^{\mathrm{st}}$ by
+\[  A^{\mathrm{st}} := \sum_{i,j} (-1)^{|j|(|i|+|j|)} a_{i,j} E_{j,i}.
+\]</div>
+<div class="para">
+The <em>Chevalley involution</em> $\tau: \mathfrak{gl}(V) \rightarrow \mathfrak{gl}(V)$ is the Lie superalgebra automorphism given by
+\[  \tau(A) = -A^{\mathrm{st}}
+\]</div>
+</section>
+</article>
+</main>
+<footer class="footer">
+<div class="footer_inner">
+</div>
+</footer>
+</body>
+</html>
